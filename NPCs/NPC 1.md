@@ -1,0 +1,1 @@
+Info about an NPC here.
