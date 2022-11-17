@@ -8,7 +8,7 @@ For the headings, I'm using [Xolonium font](https://www.fontspace.com/xolonium-f
 This vault only works with the [Dataview](https://github.com/blacksmithgu/obsidian-dataview), [Templater](https://github.com/SilentVoid13/Templater), and most importantly: [Inline Scripts](https://github.com/jon-heard/obsidian-inline-scripts) plugins.
 
 ## CSS Snippet
-The `snippets.css` file contains all the folder icons, color coding of new callout boxes, title and header fonts, fixing the tasks so they don't strike through when marked, and an inversion code so that the SVG files will invert black/white based on light/dark mode.
+The `snippets.css` file contains all the folder icons, color coding of new callout boxes, title and header fonts, fixing the tasks so they don't strike through when marked, and an inversion code so that the SVG files will invert black/white based on light/dark mode.  I don't know how to get GitHub to show the hidden .obsidian folder which is where snippets go, so I put the `snippets.css` file out in the main branch.  PUT IT IN YOUR SNIPPETS FOLDER!
 
 ## Design Goals
 Here were some specific design goals:
