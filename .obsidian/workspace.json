@@ -1,0 +1,161 @@
+{
+  "main": {
+    "id": "cbe411dac23bd9c8",
+    "type": "split",
+    "children": [
+      {
+        "id": "65ccc2b772b9930c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d1faec69c7078925",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "25a8e53d28b7f836",
+    "type": "split",
+    "children": [
+      {
+        "id": "0457e5a518360642",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "02daf7eebe9d2b7a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6c0af646e3560921",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "Action](",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "eaf013f3d720f87e",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 267.5
+  },
+  "right": {
+    "id": "8e8501a4e4730d74",
+    "type": "split",
+    "children": [
+      {
+        "id": "fabb42b332a97b06",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c12385646d61f96d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "46dc5bfb5cc444d4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "fcea82be1e664893",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "3b9fef3c9398d92a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md"
+              }
+            }
+          },
+          {
+            "id": "499c7a737bcb89af",
+            "type": "leaf",
+            "state": {
+              "type": "inline-scripts-button-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "d1faec69c7078925",
+  "lastOpenFiles": [
+    "TO DO LIST.md",
+    "README.md",
+    "Journals/Journal 1.md",
+    "Progress/Vow1.md",
+    "Progress/Progress1.md",
+    "Progress/Combat1.md",
+    "Progress/Captain_Deadeye.md",
+    "Character/Character_Sheet.md",
+    "Character/Bonds.md",
+    "Character/Quests.md"
+  ]
+}
