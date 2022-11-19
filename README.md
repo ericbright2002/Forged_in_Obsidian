@@ -1,5 +1,5 @@
 # Readme
-Welcome to my Starforged Starter Vault!  I set this up to play Starforged in a way that fits me best.
+Welcome to my Starforged Starter Vault!  I set this up to play Starforged in a way that fits me best.  I think the .obsidian folder is now showing up which means you ought to be able to download this as a zip, unzip it, and simply open the vault.  The only thing you should have to do (I think!) is add the fonts below if you want them as your heading and main typefaces.
 
 ## Fonts
 For the headings, I'm using [Xolonium font](https://www.fontspace.com/xolonium-font-f17644) and [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans) as the interface font.
@@ -8,7 +8,7 @@ For the headings, I'm using [Xolonium font](https://www.fontspace.com/xolonium-f
 This vault only works with the [Dataview](https://github.com/blacksmithgu/obsidian-dataview), [Templater](https://github.com/SilentVoid13/Templater), and most importantly: [Inline Scripts](https://github.com/jon-heard/obsidian-inline-scripts) plugins.
 
 ## CSS Snippet
-The `snippets.css` file contains all the folder icons, color coding of new callout boxes, title and header fonts, fixing the tasks so they don't strike through when marked, and an inversion code so that the SVG files will invert black/white based on light/dark mode.  I don't know how to get GitHub to show the hidden .obsidian folder which is where snippets go, so I put the `snippets.css` file out in the main branch.  PUT IT IN YOUR SNIPPETS FOLDER!
+The `snippets.css` file contains all the folder icons, color coding of new callout boxes, title and header fonts, fixing the tasks so they don't strike through when marked, and an inversion code so that the SVG files will invert black/white based on light/dark mode.  I'm not 100% sure that GitHub is showing the hidden .obsidian folder which is where snippets go, so I put the `snippets.css` file out in the main branch just in case.  If you find the vault isn't working, make sure that the `snippets.css` file is in your snippets folder and active.
 
 ## Design Goals
 Here were some specific design goals:
