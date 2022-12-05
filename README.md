@@ -1,5 +1,5 @@
 # Readme
-Welcome to my Starforged Starter Vault!  I set this up to play Starforged in a way that fits me best.  I think the .obsidian folder is now showing up which means you ought to be able to download this as a zip, unzip it, and simply open the vault.  The only thing you should have to do (I think!) is add the fonts below if you want them as your heading and main typefaces.
+Welcome to my Starforged Starter Vault!  I set this up to play Starforged in a way that fits me best.
 
 ## Fonts
 For the headings, I'm using [Xolonium font](https://www.fontspace.com/xolonium-font-f17644) and [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans) as the interface font.
@@ -8,7 +8,7 @@ For the headings, I'm using [Xolonium font](https://www.fontspace.com/xolonium-f
 This vault only works with the [Dataview](https://github.com/blacksmithgu/obsidian-dataview), [Templater](https://github.com/SilentVoid13/Templater), and most importantly: [Inline Scripts](https://github.com/jon-heard/obsidian-inline-scripts) plugins.
 
 ## CSS Snippet
-The `snippets.css` file contains all the folder icons, color coding of new callout boxes, title and header fonts, fixing the tasks so they don't strike through when marked, and an inversion code so that the SVG files will invert black/white based on light/dark mode.  I'm not 100% sure that GitHub is showing the hidden .obsidian folder which is where snippets go, so I put the `snippets.css` file out in the main branch just in case.  If you find the vault isn't working, make sure that the `snippets.css` file is in your snippets folder and active.
+The `snippets.css` file contains all the folder icons, color coding of new callout boxes, title and header fonts, fixing the tasks so they don't strike through when marked, and an inversion code so that the SVG files will invert black/white based on light/dark mode.
 
 ## Design Goals
 Here were some specific design goals:
@@ -31,7 +31,12 @@ To get started playing, you'll first want to set up your own character.
 	  >***After replacing your specific image path, type :: at the end of the command below to reset the hard-coded image path for the vault and character tracks.  You will have to manually reset any Progress Tracks you have already created.***
 	  >>[!TIP] ;;setimagepath "(app://local/C:/Users/ericb/Desktop/SFV3/Images/"
 
-2. **Stats:** Under the `Character` folder, got to the `Stats` note and set your stat values (Edge, Heart, Iron, Shadow, Wits) up in the frontmatter.  The frontmatter is the section at the top of a note enclosed by `---` marks.  These act like variables for many of the Inline Scripts, so make sure these are accurate.
+2. **Oracles:** Make sure the oracle tables are registered with Inline Scripts as noted below:
+   >[!NOTE] THIS IS CRITICAL!
+	  >***Type :: at the end of the command below to register the tables with Inline Scripts.***
+	  >>[!TIP] ;;tbl add Oracles
+
+3. **Stats:** Under the `Character` folder, got to the `Stats` note and set your stat values (Edge, Heart, Iron, Shadow, Wits) up in the frontmatter.  The frontmatter is the section at the top of a note enclosed by `---` marks.  These act like variables for many of the Inline Scripts, so make sure these are accurate.
    
 3. **Character Sheet:** In the `Character_Sheet` note, fill in your name, a picture if you want, and your backstory.  Then, scroll down to the bottom of the note and embed whichever assets you want your character to have.  Use the command `![[Ace]]` to embed the Ace asset for example.  This note pulls in everything else from the other notes in the `Character` folder.
    
@@ -92,7 +97,7 @@ While you are free to use any and all of the commands the Inline Scripts offers 
 
 16. <u>faction</u> - Rolls a full faction with all the faction oracles.
 
-17. <u>sectorname</u> - Rolls a sector name.
+17. <u>sector</u> - Rolls a full sector including planets and settlements.
 
 18. <u>settlement</u> - Rolls a full settlement using the settlement oracles.
 
@@ -194,9 +199,9 @@ While you are free to use any and all of the commands the Inline Scripts offers 
 	  <u>Example use:</u> `;;ptp` gives a result such as "You are harmed" from the Pay the Price move.
 	  
 	  <hr>
-	* **sectorname:** Gives a random sector name.
+	* **sector:** Gives a random sector including planets and settlements.
 	  
-	  <u>Example use:</u> `;;sectorname` gives a sector name
+	  <u>Example use:</u> `;;sector` gives a full sector
 	  
 	  <hr>
 	* **character:** Gives a new NPC including the Name, Callsign, First Look, Initial Disposition, Revealed Aspect, Role, and Goal.
