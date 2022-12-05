@@ -2,10 +2,10 @@
 startLine: 4
 itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 ---
-# Campaign Sector Trouble
+# Sector Trouble
 ### Category: Campaign
 
-| dice: 1d100 | Result |
+| dice: 1d300 | Result |
 |:----:|:-------|
 | 1-5 | Blockade prevents trade with other sectors |
 | 6-10 | Bounty hunters search for an infamous fugitive |
@@ -27,3 +27,43 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 86-90 | Sickness spreads among ships and settlements |
 | 91-95 | Supernova is imminent |
 | 96-100 | Titanic spaceborne lifeform stalks the spaceways |
+| 101-105 | Advanced technology is being weaponized |
+| 106-110 | Automated defense network has been hacked |
+| 111-115 | Cargo vessels with desperately needed supplies have gone missing |
+| 116-120 | Cold war between settlements or factions takes its toll |
+| 121-125 | Dangerous lifeforms have escaped from an illegal experimentation site |
+| 126-130 | Disinformation is fomenting insurrection |
+| 131-135 | Enhanced military presence causes tension with local citizens |
+| 136-140 | Greedy corporations charge astronomical tolls for travel |
+| 141-145 | Leadership has raised taxes for personal enrichment |
+| 146-150 | Local government may shut down due to underfunding |
+| 151-155 | Morphing star plays havoc with energy systems |
+| 156-160 | Necessary trade negotiations stand on the brink of failure |
+| 161-165 | Oppressive faction takes dominion over the sector |
+| 166-170 | Pirates hold a beloved leader hostage |
+| 171-175 | Political dissenters are disappearing |
+| 176-180 | Religious zealots take a slim majority in leadership and enact drastic changes |
+| 181-185 | Rumors and sightings of a ship captained by the dead cause panic |
+| 186-190 | Scarce resources allows price gouging |
+| 191-195 | Starship sabotage is rampant at the largest spaceport |
+| 196-200 | Strange energy field suppresses Eidolon drives |
+| 201-205 | Access to vital resources and medication is suddenly rationed without explanation |
+| 206-210 | Armada of unidentified vessels is headed to the sector with weapons hot |
+| 211-215 | Central space hub is quarantined at the wrong time |
+| 216-220 | Chaos reigns after the assassination of a beloved leader |
+| 221-225 | Corporations prioritize profits over people releasing unproven tech |
+| 226-230 | Damaged power supply leaves huge segments of the population without power |
+| 231-235 | Economy built on exploiting workers oppresses citizens |
+| 236-240 | Highly addictive new drug with dangerous side effects sweeps through the system |
+| 241-245 | Iconic cultural artifacts are being destroyed or stolen in a war |
+| 246-250 | Lack of infrastructure investment puts communities on the verge of collapse |
+| 251-255 | Natural disaster is imminent |
+| 256-260 | Population experiences mass visions from an unknown source |
+| 261-265 | Protests gather strength against an unpopular law |
+| 266-270 | Punishments for crime are wildly and unfairly increased |
+| 271-275 | Rampant inflation leads to overwhelming poor |
+| 276-280 | Resources mined from the asteroid belt just ran out |
+| 281-285 | Social unrest and riots become common under the brutality of authority |
+| 286-290 | The class of super-rich flaunt their power and immunity to authority |
+| 291-295 | Vast sections of the population must relocate after a disaster |
+| 296-300 | Violation of a peace treaty sets off new tensions |
