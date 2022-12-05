@@ -2,7 +2,7 @@
 startLine: 4
 itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 ---
-# Creatures Ultra Scale
+# Ultra-Scale
 ### Category: Creatures
 
 | dice: 1d100 | Result |

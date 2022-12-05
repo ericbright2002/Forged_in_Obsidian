@@ -2,7 +2,7 @@
 startLine: 4
 itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 ---
-# Creatures Basic Form Liquid
+# Basic Form Liquid
 ### Category: Creatures
 
 | dice: 1d100 | Result |
@@ -17,7 +17,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 43-45 | Insectoid / exoskeletal |
 | 46-53 | Jellyfish / gasbag |
 | 54-56 | Lizard / reptilian |
-| 57-63 | Octopoid / tentacled |
+| 57-63 | Octopoid /tentacled |
 | 64-68 | Plant / fungus |
 | 69-75 | Ray / flat-bodied |
 | 76-80 | Snake / eel |

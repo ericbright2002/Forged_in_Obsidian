@@ -2,7 +2,7 @@
 startLine: 4
 itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 ---
-# Creatures Basic Form Land
+# Basic Form Land
 ### Category: Creatures
 
 | dice: 1d100 | Result |
@@ -17,7 +17,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 40-49 | Insectoid / exoskeletal |
 | 50-51 | Jellyfish / gasbag |
 | 52-58 | Lizard / reptilian |
-| 59-60 | Octopoid / tentacled |
+| 59-60 | Octopoid /tentacled |
 | 61-65 | Plant / fungus |
 | 66-67 | Ray / flat-bodied |
 | 68-74 | Snake / eel |

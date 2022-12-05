@@ -2,7 +2,7 @@
 startLine: 4
 itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 ---
-# Creatures Basic Form Air
+# Basic Form Air
 ### Category: Creatures
 
 | dice: 1d100 | Result |
@@ -17,7 +17,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 50-51 | Insectoid / exoskeletal |
 | 52-66 | Jellyfish / gasbag |
 | 67-68 | Lizard / reptilian |
-| 69-70 | Octopoid / tentacled |
+| 69-70 | Octopoid /tentacled |
 | 71-72 | Plant / fungus |
 | 73-82 | Ray / flat-bodied |
 | 83-84 | Snake / eel |

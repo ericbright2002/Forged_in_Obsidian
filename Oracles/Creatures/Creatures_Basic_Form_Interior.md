@@ -2,7 +2,7 @@
 startLine: 4
 itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 ---
-# Creatures Basic Form Interior
+# Basic Form Interior
 ### Category: Creatures
 
 | dice: 1d100 | Result |
@@ -17,7 +17,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 38-49 | Insectoid / exoskeletal |
 | 50-51 | Jellyfish / gasbag |
 | 52-56 | Lizard / reptilian |
-| 57-58 | Octopoid / tentacled |
+| 57-58 | Octopoid /tentacled |
 | 59-63 | Plant / fungus |
 | 64-65 | Ray / flat-bodied |
 | 66-68 | Snake / eel |
