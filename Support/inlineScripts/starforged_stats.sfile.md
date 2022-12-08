@@ -160,10 +160,10 @@ let imgPath = getVar("Character/Conditions", capWord);
 var imgLoc = getVar("Support/Vault_Info", "imageLocation");
 var newPath = "";
 if (imgPath.contains("unchecked")) {
-    newPath = "\"![Img|25]" + imgLoc + "IS_Shortcut_Images/Conditions/hex-checkedG.svg)\"";
+    newPath = "\"![Img|25]" + imgLoc + "/Shortcut_Images/Conditions/hex-checkedG.svg)\"";
     onOff = "on.";
 } else {
-    newPath = "\"![Img|25]" + imgLoc + "IS_Shortcut_Images/Conditions/hex-uncheckedG.svg)\"";
+    newPath = "\"![Img|25]" + imgLoc + "/Shortcut_Images/Conditions/hex-uncheckedG.svg)\"";
     onOff = "off.";
 }
 expand("notevars set Character/Conditions " + capWord + " " + newPath);
