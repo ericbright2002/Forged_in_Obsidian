@@ -62,7 +62,7 @@ function getTrackImage(currentProgress) {
      // NOTE: imageLocation should return the image folder of your vault. 
     // "(app://local/C:/Users/ericb/Desktop/SFV3/Images/"
     let imageLocation = getVar("Support/Vault_Info", "imageLocation");
-    let trackImage = "![Img|350]" + imageLocation + "IS_Shortcut_Images/ProgressTracks/progress-track-" + currentProgress + ".svg)";
+    let trackImage = "![Img|350]" + imageLocation + "/Shortcut_Images/ProgressTracks/progress-track-" + currentProgress + ".svg)";
     return trackImage;   
 }
 ```
