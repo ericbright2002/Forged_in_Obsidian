@@ -215,7 +215,8 @@ __
 let fullPath = $1;
 let noQuotePath = fullPath.replace(/['"]+/g, '');
 expand("notevars set Support/Vault_Info imageLocation " + fullPath);
-let trackImage = "\"![Img|350]" + noQuotePath + "IS_Shortcut_Images/ProgressTracks/progress-track-";
+let trackImage = "\"![Img|350]" + noQuotePath + "/Shortcut_Images/ProgressTracks/progress-track-";
+expand("notevars set Templates/Progress_Template TrackImage " + trackImage + "0.svg)\"");
 let legacies = ["Bonds", "Discoveries", "Quests"];
 var currentProgress = 0;
 var path = "";
@@ -229,7 +230,7 @@ for (let i = 0; i < legacies.length; i = i + 1) {
     trueTrack = trackImage + currentProgress + ".svg)\"";
     expand("notevars set " + path + " TrackImage " + trueTrack);
 }
-let conditionImage = "\"![Img|25]" + noQuotePath + "IS_Shortcut_Images/Conditions/hex-";
+let conditionImage = "\"![Img|25]" + noQuotePath + "/Shortcut_Images/Conditions/hex-";
 let conditions = ["Wounded", "Shaken", "Unprepared", "Harmed", "Traumatized", "Doomed", "Tormented", "Indebted"];
 for (let j = 0; j < conditions.length; j = j + 1) {
     path = "Character/Conditions";
@@ -245,4 +246,4 @@ for (let j = 0; j < conditions.length; j = j + 1) {
 return ";;setimagepath " + fullPath;
 ```
 __
-setimagepath {full path to the Images folder} - this should start and end with double quotes and be the full path such as "(app://local/C:/Users/ericb/Desktop/SFV3/Images/"
+setimagepath {full path to the Images folder} - this should start and end with double quotes and be the full path such as "(app://local/C:/Users/ericb/Desktop/SFV3/Images"
