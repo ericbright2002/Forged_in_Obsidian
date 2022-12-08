@@ -221,26 +221,12 @@ let legacies = ["Bonds", "Discoveries", "Quests"];
 var currentProgress = 0;
 var path = "";
 var trueTrack = "";
-var currentCheck = "";
-var trueCond = "";
 for (let i = 0; i < legacies.length; i = i + 1) {
     path = "Character/" + legacies[i];
     currentProgress = getVar(path, "Progress");
     if (!currentProgress) { currentProgress = 0; }
     trueTrack = trackImage + currentProgress + ".svg)\"";
     expand("notevars set " + path + " TrackImage " + trueTrack);
-}
-let conditionImage = "\"![Img|25]" + noQuotePath + "/Shortcut_Images/Conditions/hex-";
-let conditions = ["Wounded", "Shaken", "Unprepared", "Harmed", "Traumatized", "Doomed", "Tormented", "Indebted"];
-for (let j = 0; j < conditions.length; j = j + 1) {
-    path = "Character/Conditions";
-    currentCheck = getVar(path, conditions[j]);
-    if (currentCheck.includes("unchecked")) {
-        trueCond = conditionImage + "uncheckedG.svg)\"";
-    } else {
-    trueCond = conditionImage + "checkedG.svg)\"";
-    }
-    expand("notevars set " + path + " " + conditions[j] + " " + trueCond);
 }
 
 return ";;setimagepath " + fullPath;
