@@ -15,10 +15,10 @@ function countImpacts() {
     const fm = cache.frontmatter;
     var i = 0;
     var countedImpacts = impacts.length;
-    var currentImage = "";
+    var currentValue = "";
     for (i = 0; i < impacts.length; i = i + 1) {
         currentImage = fm[impacts[i]];
-        if (currentImage.contains("unchecked")) {
+        if (currentImage.contains("⬡")) {
             countedImpacts = countedImpacts - 1;
         }
     }
@@ -156,17 +156,16 @@ __
 ```js
 var onOff = "";
 let capWord = $1.charAt(0).toUpperCase() + $1.slice(1).toLowerCase();
-let imgPath = getVar("Character/Conditions", capWord);
-var imgLoc = getVar("Support/Vault_Info", "imageLocation");
-var newPath = "";
-if (imgPath.contains("unchecked")) {
-    newPath = "\"![Img|25]" + imgLoc + "/Shortcut_Images/Conditions/hex-checkedG.svg)\"";
-    onOff = "on.";
+let currentValue = getVar("Character/Conditions", capWord);
+var newValue = "⬡";
+if (currentValue.contains("⬡")) {
+    newValue = "⬢";
+    onOff = "on. ⬢";
 } else {
-    newPath = "\"![Img|25]" + imgLoc + "/Shortcut_Images/Conditions/hex-uncheckedG.svg)\"";
-    onOff = "off.";
+    newValue = "⬡";
+    onOff = "off. ⬡";
 }
-expand("notevars set Character/Conditions " + capWord + " " + newPath);
+expand("notevars set Character/Conditions " + capWord + " " + newValue);
 return "> [!mechanics]- " + capWord + " set to " + onOff + "\n\n";
 ```
 __
