@@ -28,10 +28,6 @@
     },
     {
       "enabled": true,
-      "address": "Support/inlineScripts/starforged_test.sfile.md"
-    },
-    {
-      "enabled": true,
       "address": "Support/inlineScripts/state.sfile.md"
     },
     {
