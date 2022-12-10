@@ -31,12 +31,14 @@ To get started playing, you'll first want to set up your own character.
 	  After changing the path below to your specific path, type :: at the end of the command and Inline Scripts will reset all the image paths.  You will have to run this command everytime you change vault locations.  The command will reappear after use.
 
 >[!NOTE] THIS IS CRITICAL!
-	  >***After replacing your specific image path, type :: at the end of the command below to reset the hard-coded image path for the vault and character tracks.  You will have to manually reset any Progress Tracks you have already created.***
-	  >>[!TIP] ;;setimagepath "(app://local/C:/Users/ericb/Desktop/SFV3/Images/"
+	  >***After replacing your specific image path using forward slashes (/) instead of back slashes (\\), type :: at the end of the command below to reset the hard-coded image path for the vault and character tracks.  You will have to manually reset any Progress Tracks you have already created.***
+	  >>[!TIP] ;;setimagepath "C:/Users/ericb/Desktop/SFV3/Images/"
 
 2. **Oracles:** Make sure the oracle tables are registered with Inline Scripts as noted below:
    >[!NOTE] THIS IS CRITICAL!
-	  >***Type :: at the end of the command below to register the tables with Inline Scripts.***
+	  >***Type :: at the end of the commands below to reset the oracle tables and then register them with Inline Scripts.***
+	  >>[!TIP] ;;tbl reset
+	  >
 	  >>[!TIP] ;;tbl add Oracles
 
 3. **Stats:** Under the `Character` folder, got to the `Stats` note and set your stat values (Edge, Heart, Iron, Shadow, Wits) up in the frontmatter.  The frontmatter is the section at the top of a note enclosed by `---` marks.  These act like variables for many of the Inline Scripts, so make sure these are accurate.
