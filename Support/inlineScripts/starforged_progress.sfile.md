@@ -212,7 +212,7 @@ __
 ^setimagepath (.+)$
 __
 ```js
-let fullPath = "(app://local/" + $1;
+let fullPath = "\"(app://local/" + $1 + "\"";
 let noQuotePath = fullPath.replace(/['"]+/g, '');
 expand("notevars set Support/Vault_Info imageLocation " + fullPath);
 let trackImage = "\"![Img|350]" + noQuotePath + "/Shortcut_Images/ProgressTracks/progress-track-";
@@ -229,7 +229,7 @@ for (let i = 0; i < legacies.length; i = i + 1) {
     expand("notevars set " + path + " TrackImage " + trueTrack);
 }
 
-return ";;setimagepath " + fullPath;
+return ";;setimagepath " + $1;
 ```
 __
-setimagepath {full path to the Images folder} - this should start and end with double quotes and be the full path such as "(app://local/C:/Users/ericb/Desktop/SFV3/Images/"
+setimagepath {full path to the Images folder} - this should start and end with double quotes and be the full path such as "C:/Users/ericb/Desktop/SFV3/Images/"
