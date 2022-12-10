@@ -190,7 +190,7 @@ __
 burnmom - burns your momentum and resets
 
 __
-^gain ([_a-zA-Z]*) ([1-9])$
+^gain ([_a-zA-Z]*) ([0-9])$
 __
 ```js
 var name = $1.charAt(0).toUpperCase() + $1.slice(1).toLowerCase();
@@ -242,7 +242,7 @@ __
 gain {meter name} {amount to add from 1-5} - adds to Health, Spirit, Supply, Wealth, or Momentum
 
 __
-^lose ([a-zA-Z]*) ([1-5]*)$
+^lose ([a-zA-Z]*) ([0-9]*)$
 __
 ```js
 var name = $1.charAt(0).toUpperCase() + $1.slice(1).toLowerCase();

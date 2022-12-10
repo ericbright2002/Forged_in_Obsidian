@@ -62,7 +62,7 @@ function getTrackImage(currentProgress) {
      // NOTE: imageLocation should return the image folder of your vault. 
     // "(app://local/C:/Users/ericb/Desktop/SFV3/Images/"
     let imageLocation = getVar("Support/Vault_Info", "imageLocation");
-    let trackImage = "![Img|350]" + imageLocation + "/Shortcut_Images/ProgressTracks/progress-track-" + currentProgress + ".svg)";
+    let trackImage = "![Img|350]" + imageLocation + "Shortcut_Images/ProgressTracks/progress-track-" + currentProgress + ".svg)";
     return trackImage;   
 }
 ```
@@ -212,7 +212,7 @@ __
 ^setimagepath (.+)$
 __
 ```js
-let fullPath = $1;
+let fullPath = "(app://local/" + $1;
 let noQuotePath = fullPath.replace(/['"]+/g, '');
 expand("notevars set Support/Vault_Info imageLocation " + fullPath);
 let trackImage = "\"![Img|350]" + noQuotePath + "/Shortcut_Images/ProgressTracks/progress-track-";
@@ -232,4 +232,4 @@ for (let i = 0; i < legacies.length; i = i + 1) {
 return ";;setimagepath " + fullPath;
 ```
 __
-setimagepath {full path to the Images folder} - this should start and end with double quotes and be the full path such as "(app://local/C:/Users/ericb/Desktop/SFV3/Images"
+setimagepath {full path to the Images folder} - this should start and end with double quotes and be the full path such as "(app://local/C:/Users/ericb/Desktop/SFV3/Images/"
