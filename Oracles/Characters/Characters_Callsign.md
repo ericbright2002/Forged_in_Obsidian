@@ -120,7 +120,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 111-111 | Bones |
 | 112-112 | Boomer |
 | 113-113 | Buckshot |
-| 114-114 | Bulleye |
+| 114-114 | Bullseye |
 | 115-115 | Caravan |
 | 116-116 | Cash |
 | 117-117 | Castle |
