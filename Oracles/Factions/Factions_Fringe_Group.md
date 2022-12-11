@@ -25,7 +25,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 126-135 | Criminals |
 | 136-140 | Drug dealers |
 | 141-150 | Info brokers |
-| 151-160 | Ludites |
+| 151-160 | Luddites |
 | 161-170 | Planet pillagers |
 | 171-175 | Puritans |
 | 176-185 | Stellar nomads |

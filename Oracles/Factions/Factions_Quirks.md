@@ -51,26 +51,26 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 125-127 | Extreme hospitality shown to outsiders |
 | 128-130 | Facial tattoos signify castes or roles |
 | 131-133 | Favors a defensive fighting style |
-| 134-136 | Follow rigid social norms and ceremonies |
+| 134-136 | Follows rigid social norms and ceremonies |
 | 137-139 | Guided by mystics and omens |
 | 140-142 | Lack of social stratification |
-| 143-145 | Member all use the same name after joining |
+| 143-145 | Members all use the same name after joining |
 | 146-148 | Proud to have hunted important species to extinction |
 | 149-151 | Purposefully drab and mundane clothing |
-| 152-154 | Refuse long space journeys more than a year and a day |
+| 152-154 | Refuses long space journeys more than a year and a day |
 | 155-157 | Regular vision quests through hallucinogenic drugs |
 | 158-160 | Regularly rewrite history to look kindly upon themselves |
 | 161-163 | Reliant on machine labor for production |
-| 164-166 | Certain words reserved only for other members |
-| 167-169 | Resolves disputes through public debates or forums |
-| 170-172 | Rites of formal acceptance into the faction |
-| 173-175 | Romanticize pre-cataclysmic times |
+| 164-166 | Resolves disputes through public debates or forums |
+| 167-169 | Rites of formal acceptance into the faction |
+| 170-172 | Ritual words reserved only for other members |
+| 173-175 | Romanticizes pre-cataclysmic times |
 | 176-178 | Shuns machine labor as manual labor is seen as superior |
 | 179-181 | Shuns new or upgraded commodities for traditional ones |
 | 182-184 | Shuns the fallen and their families as unworthy |
 | 185-187 | Starships are considered individual works of art and distinct |
 | 188-190 | Trains in a demanding mental discipline or science |
-| 191-193 | Wear official identification and clearance levels at all times |
+| 191-193 | Wears official identification and clearance levels at all times |
 | 194-196 | Work or environment causes disease |
 | 197-200 | ▶[Action](Core_Action.md) + [Theme](Core_Theme.md) |
 | 201-203 | Accepted subfactions identified by dress and appearance |
