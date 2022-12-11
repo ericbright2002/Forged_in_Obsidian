@@ -28,7 +28,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 189-198 | ▶[Descriptor](Core_Descriptor.md) + [Focus](Core_Focus.md) |
 | 199-200 | ▶[Precursor Vault (orbital)](Vaults_Outer_First_Look.md) |
 | 201-211 | Basins of gypsum-filled white sand |
-| 212-222 | Dry endorherc basins that once gathered rain water |
+| 212-222 | Dry endorheic basins that once gathered rain water |
 | 223-233 | Large alluvial fans |
 | 234-244 | Mountains cracked and crumbling into limestone boulders |
 | 245-255 | Mountain-sized dust devils in a complicated dance |
