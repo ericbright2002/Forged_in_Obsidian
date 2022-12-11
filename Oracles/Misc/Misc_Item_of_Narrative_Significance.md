@@ -140,7 +140,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 131-131 | Crate of specialized engineering gear |
 | 132-132 | Cryo-frozen samples |
 | 133-133 | Decayed AI unit |
-| 134-134 | Depolyable emergency shelter |
+| 134-134 | Deployable emergency shelter |
 | 135-135 | DNA evidence of someone thought dead |
 | 136-136 | Encrypted personal diary |
 | 137-137 | Engineering patch kit |
