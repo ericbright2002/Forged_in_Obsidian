@@ -146,7 +146,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 137-137 | Enhancement |
 | 138-138 | Entanglement |
 | 139-139 | Entropy |
-| 140-140 | Exo-Suit |
+| 140-140 | Exosuit |
 | 141-141 | Experiment |
 | 142-142 | Exploration |
 | 143-143 | Explosion |
