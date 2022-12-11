@@ -73,10 +73,10 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 194-200 | ▶[Descriptor](Core_Descriptor.md) + [Focus](Core_Focus.md) |
 | 201-203 | Augmented reality environment |
 | 204-206 | Cargo pods or storage units for unknown material |
-| 207-209 | Carried computer systems compromised |
-| 210-212 | Chemical residue |
-| 213-215 | Chirping or beeping sound |
-| 216-218 | Complex systems |
+| 207-209 | Chemical residue |
+| 210-212 | Chirping or beeping sound |
+| 213-215 | Complex systems |
+| 216-218 | Computer systems compromised |
 | 219-221 | Corroded surfaces or equipment |
 | 222-224 | Directional markings respond to your presence |
 | 225-227 | Environmental controls gone haywire |

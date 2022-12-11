@@ -46,15 +46,15 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 125-127 | Containment of dangerous stellar phenomenon |
 | 128-131 | Creation of a sacred artifact |
 | 132-134 | Emergency bunker |
-| 135-138 | Generation of starships |
-| 139-141 | Generation of weapons |
-| 142-144 | Harvesting or draining energy |
-| 145-147 | Manipulation of an ancient intelligence |
-| 148-150 | Monitoring spacetime activity |
-| 151-153 | Museum or showcase of living specimens |
-| 154-156 | Preparation for future event |
-| 157-159 | Prison for spacetime criminals |
-| 160-162 | Processing of resources |
+| 135-138 | Harvesting or draining energy |
+| 139-141 | Manipulation of an ancient intelligence |
+| 142-144 | Monitoring spacetime activity |
+| 145-147 | Museum or showcase of living specimens |
+| 148-150 | Preparation for future event |
+| 151-153 | Prison for spacetime criminals |
+| 154-156 | Processing of resources |
+| 157-159 | Production of starships |
+| 160-162 | Production of weapons |
 | 163-166 | Protecting dangerous data |
 | 167-169 | Protecting of a passage or route |
 | 170-173 | Recycling or repurposing of machines or devices |
@@ -65,7 +65,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 188-190 | Veneration of a leader |
 | 191-195 | ▶[Action](Core_Action.md) + [Theme](Core_Theme.md) |
 | 196-200 | Roll twice |
-| 201-203 | Breeding of dangerous creatures |
+| 201-203 | Breeding dangerous creatures |
 | 204-206 | Containment of a spacetime rift |
 | 207-209 | Coordination of vast network |
 | 210-212 | Distributing resources |

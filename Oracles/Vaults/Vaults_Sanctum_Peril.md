@@ -29,7 +29,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 96-99 | ▶[Action](Core_Action.md) + [Theme](Core_Theme.md) |
 | 100-100 | Roll twice |
 | 101-105 | Assaulted by the spirits of those who came before |
-| 106-110 | Automatic weapons take aim |
+| 106-110 | Automated weapons take aim |
 | 111-115 | Backed into a corner by foes |
 | 116-120 | Bowel-shaking earthquakes of doubt and remorse |
 | 121-125 | Charnel house or pit slick with fresh kills |
