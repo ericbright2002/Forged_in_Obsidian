@@ -34,7 +34,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 164-170 | Spheres of ice rounded by the wind |
 | 171-177 | Sprawling tunnels through the ice |
 | 178-184 | Thin ice covering a deep lake |
-| 185-191 | Whirpool dragging icebergs to the depths |
+| 185-191 | Whirlpool dragging icebergs to the depths |
 | 192-198 | ▶[Descriptor](Core_Descriptor.md) + [Focus](Core_Focus.md) |
 | 199-200 | ▶[Precursor Vault (planetside)](Vaults_Outer_First_Look.md) |
 | 201-207 | Columns of ice |
