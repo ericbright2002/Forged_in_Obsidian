@@ -45,7 +45,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 176-180 | Removable wall plates provide access to maintenance crawl spaces |
 | 181-185 | Rerouting power must be done manually with a large circuit board of wires and plugs |
 | 186-190 | Rooms are just a little too small as the builder tried to cut costs |
-| 191-195 | Rooms have their own gravity generators all in different orientations |
+| 191-195 | Rooms have their own gravity generators but all in different orientations |
 | 196-200 | Ship painted and decorated to look like a lifeform |
 | 201-205 | Air recycler often leaves an unusual odor |
 | 206-210 | Computer has an unusual acknowledgment when responding to commands |

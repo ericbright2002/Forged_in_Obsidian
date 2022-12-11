@@ -27,7 +27,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 114-120 | You fled an unwanted birthright or family obligation |
 | 121-127 | You have unexplained knowledge beyond your understanding |
 | 128-134 | You hold dearly to a noble and philanthropic cause |
-| 135-140 | You left a corporation who wanted you to move up or out |
+| 135-140 | You left a corporation who wanted you to move up or get out |
 | 141-146 | You participated in a fierce attack and now seek atonement |
 | 147-153 | You seek to prove yourself worthy of a duty or destiny |
 | 154-160 | You wander aimlessly after losing a faithful companion |
@@ -45,10 +45,10 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 235-240 | You offended a benefactor or patron |
 | 241-246 | You participated in an unethical or illegal experiment |
 | 247-253 | You squandered the security of a normal life |
-| 254-260 | You survived a crash landing in the Expanse at great cost |
+| 254-260 | You survived a crash landing in the Expanse but at a great cost |
 | 261-267 | You were duped into a shady action |
 | 268-274 | You were shamed by a failed tech experiment |
 | 275-281 | You were shunned for your beliefs |
 | 282-287 | You were viewed as a pariah |
 | 288-294 | Your search for knowledge carried you far away |
-| 295-300 | Your unique genetic markers make you a target to illegal research |
+| 295-300 | Your unique genetic markers make you a target for illegal research |

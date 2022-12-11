@@ -19,10 +19,10 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 76-84 | Stolen from a notorious crime boss or criminal organization |
 | 85-92 | Taken while fleeing an attack or disaster |
 | 93-100 | Won in a bet |
-| 101-108 | Abandoned as a cursed vessel that no one dares take |
+| 101-108 | Abandoned as a cursed vessel that no one else dared to take |
 | 109-117 | Bought at auction from an estate sale |
 | 118-125 | Claimed as a corporate cast-off after upgrading their fleet |
-| 126-134 | Gifted from a notorious crime boss as a favor to be called in |
+| 126-134 | Gifted from a notorious crime boss in exchange for a favor to be called in later |
 | 135-142 | Given as a resolution to a promise or vow |
 | 143-150 | Glitchy corporate prototype given away |
 | 151-158 | Granted by an unknown benefactor |
@@ -38,7 +38,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 235-242 | Given as a down payment for a job needing done |
 | 243-250 | Given as collateral for a debt you are owed |
 | 251-258 | Granted as a dying wish with strings attached |
-| 259-267 | Perk of a previous leadership position that was kept |
+| 259-267 | Perk of a previous leadership position |
 | 268-275 | Purchased from a disgraced captain forced into retirement |
 | 276-284 | Retrofitted museum vessel |
 | 285-292 | Stolen from a faction or corporation |

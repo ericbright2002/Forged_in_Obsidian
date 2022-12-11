@@ -44,14 +44,14 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 171-175 | Political dissenters are disappearing |
 | 176-180 | Religious zealots take a slim majority in leadership and enact drastic changes |
 | 181-185 | Rumors and sightings of a ship captained by the dead cause panic |
-| 186-190 | Scarce resources allows price gouging |
+| 186-190 | Scarce resources lead to price gouging |
 | 191-195 | Starship sabotage is rampant at the largest spaceport |
 | 196-200 | Strange energy field suppresses Eidolon drives |
 | 201-205 | Access to vital resources and medication is suddenly rationed without explanation |
 | 206-210 | Armada of unidentified vessels is headed to the sector with weapons hot |
 | 211-215 | Central space hub is quarantined at the wrong time |
 | 216-220 | Chaos reigns after the assassination of a beloved leader |
-| 221-225 | Corporations prioritize profits over people releasing unproven tech |
+| 221-225 | Corporations prioritize profits over people and release unproven tech |
 | 226-230 | Damaged power supply leaves huge segments of the population without power |
 | 231-235 | Economy built on exploiting workers oppresses citizens |
 | 236-240 | Highly addictive new drug with dangerous side effects sweeps through the system |
