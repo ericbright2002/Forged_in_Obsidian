@@ -50,11 +50,11 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 119-121 | Engines threaten to overload |
 | 122-124 | Food supplies tainted |
 | 125-127 | Hidden threat within the ship is revealed |
-| 128-130 | Hull breached by micro-meteoroid |
+| 128-130 | Hull breached by micrometeoroid |
 | 131-133 | Known passage is no longer safe |
 | 134-136 | Lifeform threatens others nearby |
 | 137-139 | Moon&#x27;s orbit goes rogue |
-| 140-142 | Nanobots alter ships systems |
+| 140-142 | Nanobots alter ship&#x27;s systems |
 | 143-145 | Navigational array malfunctions |
 | 146-148 | Nearby settlement sends out fighters |
 | 149-151 | Nearby star goes dangerously cold |
@@ -84,7 +84,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 219-221 | Encrypted signal points to an imminent attack |
 | 222-224 | Energy net surrounds the ship |
 | 225-227 | Erratic asteroids impede movement |
-| 228-230 | Escapes pods going in separate directions all call for help |
+| 228-230 | Escape pods going in separate directions all call for help |
 | 231-233 | Fleet demands payment for safe travel |
 | 234-236 | Garbled calls for help from an unknown source |
 | 237-239 | Gravitational maelstrom |
@@ -94,7 +94,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 249-251 | Large solar flare compromises communications |
 | 252-254 | Malicious code takes over a system |
 | 255-257 | Maneuvering thrusters malfunction |
-| 258-260 | Micro-organism feeds off ship&#x27;s power supply |
+| 258-260 | Microorganism feeds off ship&#x27;s power supply |
 | 261-263 | Mysterious sealed crate is found in the cargo hold |
 | 264-266 | Ominous signs and portents |
 | 267-269 | Parasites feast on a long dead space creature |

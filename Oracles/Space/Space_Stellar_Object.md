@@ -24,7 +24,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 116-130 | Vibrant pink star crackling with electricity |
 | 131-145 | Blinding white star burning hot |
 | 146-150 | Ethereal purple star whose light bends unnaturally |
-| 151-160 | Proto-star just beginning to take form |
+| 151-160 | Protostar just beginning to take form |
 | 161-170 | Cooled black dwarf with extreme density |
 | 171-175 | Excited star infused with hydrogen |
 | 176-180 | Magnetar emitting high energy radiation |
