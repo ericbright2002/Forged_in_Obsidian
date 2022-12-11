@@ -5228,7 +5228,7 @@
         {
           "Floor": 140,
           "Ceiling": 140,
-          "Result": "Exo-Suit"
+          "Result": "Exosuit"
         },
         {
           "Floor": 141,
@@ -6141,7 +6141,7 @@
         {
           "Floor": 135,
           "Ceiling": 140,
-          "Result": "You left a corporation who wanted you to move up or out"
+          "Result": "You left a corporation who wanted you to move up or get out"
         },
         {
           "Floor": 141,
@@ -6231,7 +6231,7 @@
         {
           "Floor": 254,
           "Ceiling": 260,
-          "Result": "You survived a crash landing in the Expanse at great cost"
+          "Result": "You survived a crash landing in the Expanse but at a great cost"
         },
         {
           "Floor": 261,
@@ -6261,7 +6261,7 @@
         {
           "Floor": 295,
           "Ceiling": 300,
-          "Result": "Your unique genetic markers make you a target to illegal research"
+          "Result": "Your unique genetic markers make you a target for illegal research"
         }
       ]
     },
@@ -6334,7 +6334,7 @@
         {
           "Floor": 101,
           "Ceiling": 108,
-          "Result": "Abandoned as a cursed vessel that no one dares take"
+          "Result": "Abandoned as a cursed vessel that no one else dared to take"
         },
         {
           "Floor": 109,
@@ -6349,7 +6349,7 @@
         {
           "Floor": 126,
           "Ceiling": 134,
-          "Result": "Gifted from a notorious crime boss as a favor to be called in"
+          "Result": "Gifted from a notorious crime boss in exchange for a favor to be called in later"
         },
         {
           "Floor": 135,
@@ -6429,7 +6429,7 @@
         {
           "Floor": 259,
           "Ceiling": 267,
-          "Result": "Perk of a previous leadership position that was kept"
+          "Result": "Perk of a previous leadership position"
         },
         {
           "Floor": 268,
@@ -6652,7 +6652,7 @@
         {
           "Floor": 191,
           "Ceiling": 195,
-          "Result": "Rooms have their own gravity generators all in different orientations"
+          "Result": "Rooms have their own gravity generators but all in different orientations"
         },
         {
           "Floor": 196,
@@ -6955,7 +6955,7 @@
         {
           "Floor": 186,
           "Ceiling": 190,
-          "Result": "Scarce resources allows price gouging"
+          "Result": "Scarce resources lead to price gouging"
         },
         {
           "Floor": 191,
@@ -6990,7 +6990,7 @@
         {
           "Floor": 221,
           "Ceiling": 225,
-          "Result": "Corporations prioritize profits over people releasing unproven tech"
+          "Result": "Corporations prioritize profits over people and release unproven tech"
         },
         {
           "Floor": 226,
@@ -17018,7 +17018,7 @@
         {
           "Floor": 114,
           "Ceiling": 114,
-          "Result": "Bulleye"
+          "Result": "Bullseye"
         },
         {
           "Floor": 115,
@@ -19958,22 +19958,22 @@
         {
           "Floor": 207,
           "Ceiling": 209,
-          "Result": "Carried computer systems compromised"
+          "Result": "Chemical residue"
         },
         {
           "Floor": 210,
           "Ceiling": 212,
-          "Result": "Chemical residue"
+          "Result": "Chirping or beeping sound"
         },
         {
           "Floor": 213,
           "Ceiling": 215,
-          "Result": "Chirping or beeping sound"
+          "Result": "Complex systems"
         },
         {
           "Floor": 216,
           "Ceiling": 218,
-          "Result": "Complex systems"
+          "Result": "Computer systems compromised"
         },
         {
           "Floor": 219,
@@ -20311,47 +20311,47 @@
         {
           "Floor": 135,
           "Ceiling": 138,
-          "Result": "Generation of starships"
+          "Result": "Harvesting or draining energy"
         },
         {
           "Floor": 139,
           "Ceiling": 141,
-          "Result": "Generation of weapons"
+          "Result": "Manipulation of an ancient intelligence"
         },
         {
           "Floor": 142,
           "Ceiling": 144,
-          "Result": "Harvesting or draining energy"
+          "Result": "Monitoring spacetime activity"
         },
         {
           "Floor": 145,
           "Ceiling": 147,
-          "Result": "Manipulation of an ancient intelligence"
+          "Result": "Museum or showcase of living specimens"
         },
         {
           "Floor": 148,
           "Ceiling": 150,
-          "Result": "Monitoring spacetime activity"
+          "Result": "Preparation for future event"
         },
         {
           "Floor": 151,
           "Ceiling": 153,
-          "Result": "Museum or showcase of living specimens"
+          "Result": "Prison for spacetime criminals"
         },
         {
           "Floor": 154,
           "Ceiling": 156,
-          "Result": "Preparation for future event"
+          "Result": "Processing of resources"
         },
         {
           "Floor": 157,
           "Ceiling": 159,
-          "Result": "Prison for spacetime criminals"
+          "Result": "Production of starships"
         },
         {
           "Floor": 160,
           "Ceiling": 162,
-          "Result": "Processing of resources"
+          "Result": "Production of weapons"
         },
         {
           "Floor": 163,
@@ -20406,7 +20406,7 @@
         {
           "Floor": 201,
           "Ceiling": 203,
-          "Result": "Breeding of dangerous creatures"
+          "Result": "Breeding dangerous creatures"
         },
         {
           "Floor": 204,
@@ -22216,7 +22216,7 @@
         {
           "Floor": 106,
           "Ceiling": 110,
-          "Result": "Automatic weapons take aim"
+          "Result": "Automated weapons take aim"
         },
         {
           "Floor": 111,
@@ -25157,7 +25157,7 @@
         {
           "Floor": 151,
           "Ceiling": 160,
-          "Result": "Proto-star just beginning to take form"
+          "Result": "Protostar just beginning to take form"
         },
         {
           "Floor": 161,
@@ -25490,7 +25490,7 @@
         {
           "Floor": 128,
           "Ceiling": 130,
-          "Result": "Hull breached by micro-meteoroid"
+          "Result": "Hull breached by micrometeoroid"
         },
         {
           "Floor": 131,
@@ -25510,7 +25510,7 @@
         {
           "Floor": 140,
           "Ceiling": 142,
-          "Result": "Nanobots alter ships systems"
+          "Result": "Nanobots alter ship's systems"
         },
         {
           "Floor": 143,
@@ -25660,7 +25660,7 @@
         {
           "Floor": 228,
           "Ceiling": 230,
-          "Result": "Escapes pods going in separate directions all call for help"
+          "Result": "Escape pods going in separate directions all call for help"
         },
         {
           "Floor": 231,
@@ -25710,7 +25710,7 @@
         {
           "Floor": 258,
           "Ceiling": 260,
-          "Result": "Micro-organism feeds off ship's power supply"
+          "Result": "Microorganism feeds off ship's power supply"
         },
         {
           "Floor": 261,
@@ -26509,7 +26509,7 @@
         {
           "Floor": 212,
           "Ceiling": 222,
-          "Result": "Dry endorherc basins that once gathered rain water"
+          "Result": "Dry endorheic basins that once gathered rain water"
         },
         {
           "Floor": 223,
@@ -29259,7 +29259,7 @@
         {
           "Floor": 185,
           "Ceiling": 191,
-          "Result": "Whirpool dragging icebergs to the depths"
+          "Result": "Whirlpool dragging icebergs to the depths"
         },
         {
           "Floor": 192,
@@ -30789,7 +30789,7 @@
         {
           "Floor": 223,
           "Ceiling": 233,
-          "Result": "Maze of criss-crossing rivers"
+          "Result": "Maze of crisscrossing rivers"
         },
         {
           "Floor": 234,
@@ -31678,7 +31678,7 @@
         {
           "Floor": 256,
           "Ceiling": 266,
-          "Result": "Floatings sections of mud and sand congealing"
+          "Result": "Floatings sections of congealing mud and sand"
         },
         {
           "Floor": 267,
@@ -31871,7 +31871,7 @@
         {
           "Floor": 215,
           "Ceiling": 221,
-          "Result": "Continental shelf in nearly formed"
+          "Result": "Continental shelf nearly formed"
         },
         {
           "Floor": 222,
@@ -32655,7 +32655,7 @@
         {
           "Floor": 122,
           "Ceiling": 128,
-          "Result": "Cooled caves from a lop-sided core"
+          "Result": "Cooled caves from a lopsided core"
         },
         {
           "Floor": 129,
@@ -33351,7 +33351,7 @@
         {
           "Floor": 201,
           "Ceiling": 211,
-          "Result": "Abandoned orbit stations"
+          "Result": "Abandoned orbital stations"
         },
         {
           "Floor": 212,
@@ -36098,7 +36098,7 @@
         {
           "Floor": 101,
           "Ceiling": 103,
-          "Result": "Injured lifeform draws need"
+          "Result": "Injured lifeform draws near"
         },
         {
           "Floor": 104,
@@ -41110,7 +41110,7 @@
         {
           "Floor": 248,
           "Ceiling": 250,
-          "Result": "Shipwright - Mobile dry dock"
+          "Result": "Shipwright - Mobile drydock"
         },
         {
           "Floor": 251,
@@ -43871,7 +43871,7 @@
         {
           "Floor": 120,
           "Ceiling": 120,
-          "Result": "Delta Flyer"
+          "Result": "Delta Flier"
         },
         {
           "Floor": 121,
@@ -45729,7 +45729,7 @@
         {
           "Floor": 151,
           "Ceiling": 160,
-          "Result": "Ludites"
+          "Result": "Luddites"
         },
         {
           "Floor": 161,
@@ -49488,7 +49488,7 @@
         {
           "Floor": 134,
           "Ceiling": 136,
-          "Result": "Follow rigid social norms and ceremonies"
+          "Result": "Follows rigid social norms and ceremonies"
         },
         {
           "Floor": 137,
@@ -49503,7 +49503,7 @@
         {
           "Floor": 143,
           "Ceiling": 145,
-          "Result": "Member all use the same name after joining"
+          "Result": "Members all use the same name after joining"
         },
         {
           "Floor": 146,
@@ -49518,7 +49518,7 @@
         {
           "Floor": 152,
           "Ceiling": 154,
-          "Result": "Refuse long space journeys more than a year and a day"
+          "Result": "Refuses long space journeys more than a year and a day"
         },
         {
           "Floor": 155,
@@ -49538,22 +49538,22 @@
         {
           "Floor": 164,
           "Ceiling": 166,
-          "Result": "Certain words reserved only for other members"
+          "Result": "Resolves disputes through public debates or forums"
         },
         {
           "Floor": 167,
           "Ceiling": 169,
-          "Result": "Resolves disputes through public debates or forums"
+          "Result": "Rites of formal acceptance into the faction"
         },
         {
           "Floor": 170,
           "Ceiling": 172,
-          "Result": "Rites of formal acceptance into the faction"
+          "Result": "Ritual words reserved only for other members"
         },
         {
           "Floor": 173,
           "Ceiling": 175,
-          "Result": "Romanticize pre-cataclysmic times"
+          "Result": "Romanticizes pre-cataclysmic times"
         },
         {
           "Floor": 176,
@@ -49583,7 +49583,7 @@
         {
           "Floor": 191,
           "Ceiling": 193,
-          "Result": "Wear official identification and clearance levels at all times"
+          "Result": "Wears official identification and clearance levels at all times"
         },
         {
           "Floor": 194,
@@ -54958,7 +54958,7 @@
           "Result": "Alterations in the flow of time"
         },
         {
-          "Floor": 1,
+          "Floor": 9,
           "Ceiling": 16,
           "Result": "Chaotic portal, focus, or conduit"
         },
@@ -55132,7 +55132,7 @@
           "Result": "Captives or prisoners"
         },
         {
-          "Floor": 1,
+          "Floor": 9,
           "Ceiling": 16,
           "Result": "Control area or terminal"
         },
@@ -55306,7 +55306,7 @@
           "Result": "Disembodied voices"
         },
         {
-          "Floor": 1,
+          "Floor": 9,
           "Ceiling": 16,
           "Result": "Eerie cold"
         },
@@ -55480,7 +55480,7 @@
           "Result": "Corpse of an unfortunate victim"
         },
         {
-          "Floor": 1,
+          "Floor": 9,
           "Ceiling": 16,
           "Result": "Eggs, cocoons, or nest"
         },
@@ -55654,7 +55654,7 @@
           "Result": "Conspicuous patrols or surveillance"
         },
         {
-          "Floor": 1,
+          "Floor": 9,
           "Ceiling": 16,
           "Result": "Crews at work"
         },
@@ -55828,7 +55828,7 @@
           "Result": "Control station or terminal"
         },
         {
-          "Floor": 1,
+          "Floor": 9,
           "Ceiling": 16,
           "Result": "Device or technology with a mysterious function"
         },
@@ -55997,7 +55997,7 @@
       "Dice": "100",
       "Table": [
         {
-          "Floor": 1,
+          "Floor": 9,
           "Ceiling": 8,
           "Result": "Collapsed or broken structures or terrain"
         },
@@ -56176,7 +56176,7 @@
           "Result": "Adherents performing worship or enacting rituals"
         },
         {
-          "Floor": 1,
+          "Floor": 9,
           "Ceiling": 16,
           "Result": "Altar or temple"
         },
@@ -56350,7 +56350,7 @@
           "Result": "Dried wadi awaiting the rainy season"
         },
         {
-          "Floor": 1,
+          "Floor": 9,
           "Ceiling": 16,
           "Result": "Intricate rock formation sculpted by the wind"
         },
@@ -56524,7 +56524,7 @@
           "Result": "Ambient lifeforms feeding off chronal energy"
         },
         {
-          "Floor": 1,
+          "Floor": 9,
           "Ceiling": 16,
           "Result": "Artifact or natural occurrence acting as a focal point"
         },
@@ -56698,7 +56698,7 @@
           "Result": "Ash-covered terrain"
         },
         {
-          "Floor": 1,
+          "Floor": 9,
           "Ceiling": 16,
           "Result": "Geysers of lava"
         },
@@ -56872,7 +56872,7 @@
           "Result": "Areas of variable gravity"
         },
         {
-          "Floor": 1,
+          "Floor": 9,
           "Ceiling": 16,
           "Result": "Bridge connecting islands or platforms"
         },
@@ -56947,7 +56947,7 @@
         {
           "Floor": 10,
           "Ceiling": 18,
-          "Result": "Crumbling islands aloft"
+          "Result": "Crumbling islands beneath your feet"
         },
         {
           "Floor": 19,
@@ -57046,7 +57046,7 @@
           "Result": "Deep and murky waters"
         },
         {
-          "Floor": 1,
+          "Floor": 9,
           "Ceiling": 16,
           "Result": "Flotsam and jetsam"
         },
@@ -57220,7 +57220,7 @@
           "Result": "Abandoned equipment frozen solid"
         },
         {
-          "Floor": 1,
+          "Floor": 9,
           "Ceiling": 16,
           "Result": "Frozen river or lake"
         },
@@ -57394,7 +57394,7 @@
           "Result": "Bundles of nerve fibers"
         },
         {
-          "Floor": 1,
+          "Floor": 9,
           "Ceiling": 16,
           "Result": "Decaying or dying cells"
         },
@@ -57568,7 +57568,7 @@
           "Result": "Accoutrements of ceremony"
         },
         {
-          "Floor": 1,
+          "Floor": 9,
           "Ceiling": 16,
           "Result": "Animated cleaning tools or equipment"
         },
@@ -57742,7 +57742,7 @@
           "Result": "Cacophony of calls and shrieks"
         },
         {
-          "Floor": 1,
+          "Floor": 9,
           "Ceiling": 16,
           "Result": "Caracass picked clean"
         },
@@ -57880,7 +57880,7 @@
         {
           "Floor": 1,
           "Ceiling": 20,
-          "Result": "Access to area untouched for lifetimes"
+          "Result": "Access to area untouched for ages"
         },
         {
           "Floor": 21,
@@ -57916,7 +57916,7 @@
           "Result": "Battle standard or beacon buoy"
         },
         {
-          "Floor": 1,
+          "Floor": 9,
           "Ceiling": 16,
           "Result": "Combatants fleeing the battle"
         },
@@ -60674,7 +60674,7 @@
         {
           "Floor": 134,
           "Ceiling": 134,
-          "Result": "Depolyable emergency shelter"
+          "Result": "Deployable emergency shelter"
         },
         {
           "Floor": 135,
