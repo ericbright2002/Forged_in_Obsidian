@@ -125,7 +125,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 117-117 | Cydonia |
 | 118-118 | Data Lore |
 | 119-119 | Deep Space Wine |
-| 120-120 | Delta Flyer |
+| 120-120 | Delta Flier |
 | 121-121 | Destiny |
 | 122-122 | Dreamweaver |
 | 123-123 | Errant Fool |

@@ -64,7 +64,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 237-238 | Destroyer - Planet killer |
 | 239-242 | Oracle - Deep space science vessel |
 | 243-247 | Discovery - Science vessel |
-| 248-250 | Shipwright - Mobile dry dock |
+| 248-250 | Shipwright - Mobile drydock |
 | 251-256 | Distiller - Mobile mineral processor |
 | 257-261 | Amphibian - Planetary lander |
 | 262-264 | Train - Unmanned transport |
