@@ -29,7 +29,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 199-200 | ▶[Precursor Vault (orbital)](Vaults_Outer_First_Look.md) |
 | 201-211 | All rivers lead to a single ocean |
 | 212-222 | Atmosphere near 100% humidity |
-| 223-233 | Maze of criss-crossing rivers |
+| 223-233 | Maze of crisscrossing rivers |
 | 234-244 | Swath of grassy plains |
 | 245-255 | Vegetation floating on the oceans |
 | 256-266 | Vibrant colored islands |
