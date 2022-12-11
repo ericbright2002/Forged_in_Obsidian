@@ -8,7 +8,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | dice: 1d300 | Result |
 |:----:|:-------|
 | 1-8 | Deep and murky waters |
-| 1-16 | Flotsam and jetsam |
+| 9-16 | Flotsam and jetsam |
 | 17-24 | Pockets of thin-membraned atmosphere |
 | 25-32 | Prolific mold, slime, or fungus |
 | 33-40 | Signs of what once was here |

@@ -8,7 +8,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | dice: 1d300 | Result |
 |:----:|:-------|
 | 1-8 | Battle standard or beacon buoy |
-| 1-16 | Combatants fleeing the battle |
+| 9-16 | Combatants fleeing the battle |
 | 17-24 | Command ship or center |
 | 25-32 | Damaged engines of war now abandoned |
 | 33-40 | Debris and wrecked terrain |

@@ -8,7 +8,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | dice: 1d300 | Result |
 |:----:|:-------|
 | 1-8 | Conspicuous patrols or surveillance |
-| 1-16 | Crews at work |
+| 9-16 | Crews at work |
 | 17-24 | Display or monument honors a notable cultural event |
 | 25-32 | Emergency teams responding to an incident or crisis |
 | 33-40 | Families gathering or children playing |

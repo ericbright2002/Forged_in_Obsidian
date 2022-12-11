@@ -8,7 +8,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | dice: 1d300 | Result |
 |:----:|:-------|
 | 1-8 | Ash-covered terrain |
-| 1-16 | Geysers of lava |
+| 9-16 | Geysers of lava |
 | 17-24 | Giant rock columns or boulders |
 | 25-32 | Heat-induced electromagnetic field |
 | 33-40 | Islands floating on lava |

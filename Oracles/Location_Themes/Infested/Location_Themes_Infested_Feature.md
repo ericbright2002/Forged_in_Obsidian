@@ -8,7 +8,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | dice: 1d300 | Result |
 |:----:|:-------|
 | 1-8 | Corpse of an unfortunate victim |
-| 1-16 | Eggs, cocoons, or nest |
+| 9-16 | Eggs, cocoons, or nest |
 | 17-24 | Environment corrupted by the infestation |
 | 25-32 | Evidence of a lurking creature |
 | 33-40 | Evidence of an ill-fated victim |

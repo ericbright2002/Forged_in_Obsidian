@@ -8,7 +8,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | dice: 1d300 | Result |
 |:----:|:-------|
 | 1-8 | Areas of variable gravity |
-| 1-16 | Bridge connecting islands or platforms |
+| 9-16 | Bridge connecting islands or platforms |
 | 17-24 | Central control hub |
 | 25-32 | Dust shower from above |
 | 33-40 | Generator or other energy powering the islands |

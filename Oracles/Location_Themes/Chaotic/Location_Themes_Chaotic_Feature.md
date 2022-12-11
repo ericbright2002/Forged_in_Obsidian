@@ -8,7 +8,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | dice: 1d300 | Result |
 |:----:|:-------|
 | 1-8 | Alterations in the flow of time |
-| 1-16 | Chaotic portal, focus, or conduit |
+| 9-16 | Chaotic portal, focus, or conduit |
 | 17-24 | Corrupted or warped architecture or terrain |
 | 25-32 | Corrupted or warped environment or ecosystem |
 | 33-40 | Corrupted or warped technology |

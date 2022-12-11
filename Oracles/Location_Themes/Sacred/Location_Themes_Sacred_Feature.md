@@ -8,7 +8,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | dice: 1d300 | Result |
 |:----:|:-------|
 | 1-8 | Adherents performing worship or enacting rituals |
-| 1-16 | Altar or temple |
+| 9-16 | Altar or temple |
 | 17-24 | Dwellings for the faithful |
 | 25-32 | Enigmatic symbols |
 | 33-40 | Graves or remains of glorified disciples |

@@ -8,7 +8,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | dice: 1d300 | Result |
 |:----:|:-------|
 | 1-8 | Captives or prisoners |
-| 1-16 | Control area or terminal |
+| 9-16 | Control area or terminal |
 | 17-24 | Empty or inactive area |
 | 25-32 | Enemy forces assembled for an event |
 | 33-40 | Enemy forces off-duty or at leisure |

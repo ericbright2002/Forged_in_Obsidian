@@ -8,7 +8,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | dice: 1d300 | Result |
 |:----:|:-------|
 | 1-8 | Control station or terminal |
-| 1-16 | Device or technology with a mysterious function |
+| 9-16 | Device or technology with a mysterious function |
 | 17-24 | Disassembled machinery or parts |
 | 25-32 | Heavy machinery at work |
 | 33-40 | Machine fabrication or repair |

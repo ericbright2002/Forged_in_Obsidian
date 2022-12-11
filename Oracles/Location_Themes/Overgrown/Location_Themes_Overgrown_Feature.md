@@ -8,7 +8,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | dice: 1d300 | Result |
 |:----:|:-------|
 | 1-8 | Cacophony of calls and shrieks |
-| 1-16 | Caracass picked clean |
+| 9-16 | Caracass picked clean |
 | 17-24 | Colonies of insects or tiny lifeforms |
 | 25-32 | Evidence of a failed hunting expedition |
 | 33-40 | Huge footprints in the ground |

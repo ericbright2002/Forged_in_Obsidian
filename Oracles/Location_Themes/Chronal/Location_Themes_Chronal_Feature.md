@@ -8,7 +8,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | dice: 1d300 | Result |
 |:----:|:-------|
 | 1-8 | Ambient lifeforms feeding off chronal energy |
-| 1-16 | Artifact or natural occurrence acting as a focal point |
+| 9-16 | Artifact or natural occurrence acting as a focal point |
 | 17-24 | Beings, objects, or events stuck in a short time loop |
 | 25-32 | Conflicting visions of future events |
 | 33-40 | Glimpses of past events |

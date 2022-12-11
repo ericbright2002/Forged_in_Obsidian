@@ -8,7 +8,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | dice: 1d300 | Result |
 |:----:|:-------|
 | 1-8 | Abandoned equipment frozen solid |
-| 1-16 | Frozen river or lake |
+| 9-16 | Frozen river or lake |
 | 17-24 | Frozen waterfalls |
 | 25-32 | Huge snow drifts |
 | 33-40 | Intricate crystalline structures of ice |

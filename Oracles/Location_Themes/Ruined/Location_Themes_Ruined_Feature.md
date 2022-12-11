@@ -8,7 +8,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | dice: 1d300 | Result |
 |:----:|:-------|
 | 1-8 | Collapsed or broken structures or terrain |
-| 1-16 | Device or artifact with residual power or function |
+| 9-16 | Device or artifact with residual power or function |
 | 17-24 | Focal point or nexus of the destruction |
 | 25-32 | Graves or corpses |
 | 33-40 | Innermost or hidden spaces laid bare by the destruction |

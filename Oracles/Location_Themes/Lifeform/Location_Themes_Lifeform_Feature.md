@@ -8,7 +8,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | dice: 1d300 | Result |
 |:----:|:-------|
 | 1-8 | Bundles of nerve fibers |
-| 1-16 | Decaying or dying cells |
+| 9-16 | Decaying or dying cells |
 | 17-24 | Dilating openings |
 | 25-32 | Large bending joints |
 | 33-40 | Protruding bones |

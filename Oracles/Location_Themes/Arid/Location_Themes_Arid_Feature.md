@@ -8,7 +8,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | dice: 1d300 | Result |
 |:----:|:-------|
 | 1-8 | Dried wadi awaiting the rainy season |
-| 1-16 | Intricate rock formation sculpted by the wind |
+| 9-16 | Intricate rock formation sculpted by the wind |
 | 17-24 | Large sinkhole of swirling sand |
 | 25-32 | Light-bending waves of heat or cold |
 | 33-40 | Mazelike passageways through canyons |

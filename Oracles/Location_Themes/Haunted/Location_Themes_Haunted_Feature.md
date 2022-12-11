@@ -8,7 +8,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | dice: 1d300 | Result |
 |:----:|:-------|
 | 1-8 | Disembodied voices |
-| 1-16 | Eerie cold |
+| 9-16 | Eerie cold |
 | 17-24 | Foreboding omen or message |
 | 25-32 | Ghostly visions of this place in another time |
 | 33-40 | Glimpses of shadowy movement |

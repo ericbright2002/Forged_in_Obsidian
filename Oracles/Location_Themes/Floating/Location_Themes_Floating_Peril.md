@@ -8,7 +8,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | dice: 1d300 | Result |
 |:----:|:-------|
 | 1-9 | Airborne foe moves to attack |
-| 10-18 | Crumbling islands aloft |
+| 10-18 | Crumbling islands beneath your feet |
 | 19-27 | Dramatic shift in orientation |
 | 28-36 | Failure of forces keeping everything aloft |
 | 37-45 | Guard rail, ladder, or natural barrier gives way |

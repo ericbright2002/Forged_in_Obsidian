@@ -8,7 +8,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | dice: 1d300 | Result |
 |:----:|:-------|
 | 1-8 | Accoutrements of ceremony |
-| 1-16 | Animated cleaning tools or equipment |
+| 9-16 | Animated cleaning tools or equipment |
 | 17-24 | Arcane symbols, runes, or sigils |
 | 25-32 | Chamber of mystical rituals |
 | 33-40 | Ethereal sounds and lights |
