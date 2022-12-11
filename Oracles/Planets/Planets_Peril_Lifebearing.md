@@ -41,7 +41,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 94-96 | Wreckage or ruins portend a new threat |
 | 97-99 | ▶[Action](Core_Action.md) + [Theme](Core_Theme.md) |
 | 100-100 | Roll Twice |
-| 101-103 | Injured lifeform draws need |
+| 101-103 | Injured lifeform draws near |
 | 104-106 | Lifeform hiding from predator |
 | 107-109 | Lifeform nursery |
 | 110-112 | Lifeforms grazing placidly in a herd |
