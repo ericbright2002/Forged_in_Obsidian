@@ -39,7 +39,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 199-200 | ▶[Precursor Vault (planetside)](Vaults_Outer_First_Look.md) |
 | 201-207 | Abyssal hills |
 | 208-214 | Bubbling gas vents |
-| 215-221 | Continental shelf in nearly formed |
+| 215-221 | Continental shelf nearly formed |
 | 222-228 | Freezing icespouts from large temperature variations |
 | 229-235 | Freshly churned earth from the sea floor |
 | 236-242 | Heavy liquid particles acting like underwater rain |

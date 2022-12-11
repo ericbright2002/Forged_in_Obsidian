@@ -32,7 +32,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 223-233 | Clouds of ash and vapor circumnavigating the globe |
 | 234-244 | Complete lack of land |
 | 245-255 | Constant rain |
-| 256-266 | Floatings sections of mud and sand congealing |
+| 256-266 | Floatings sections of congealing mud and sand |
 | 267-277 | Highly reflective waters |
 | 278-288 | Island-sized sponges |
 | 289-298 | ▶[Descriptor](Core_Descriptor.md) + [Focus](Core_Focus.md) |
