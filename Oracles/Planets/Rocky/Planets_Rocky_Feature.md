@@ -25,7 +25,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 101-107 | Active volcanoes |
 | 108-114 | Blinding duststorm |
 | 115-121 | Caverns of chalky rock |
-| 122-128 | Cooled caves from a lop-sided core |
+| 122-128 | Cooled caves from a lopsided core |
 | 129-135 | Desert of tiny pebbles |
 | 136-142 | Exposed lava flow |
 | 143-149 | Lava formations |
