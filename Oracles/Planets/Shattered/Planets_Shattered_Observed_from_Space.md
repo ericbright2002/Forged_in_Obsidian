@@ -27,7 +27,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 178-188 | Storms of meteorites |
 | 189-198 | ▶[Descriptor](Core_Descriptor.md) + [Focus](Core_Focus.md) |
 | 199-200 | ▶[Precursor Vault (orbital)](Vaults_Outer_First_Look.md) |
-| 201-211 | Abandoned orbit stations |
+| 201-211 | Abandoned orbital stations |
 | 212-222 | Dead and frozen core |
 | 223-233 | Debris field fused together by intense heat |
 | 234-244 | Erratic magnetic pulses |
