@@ -54922,22 +54922,22 @@
         {
           "Floor": 151,
           "Ceiling": 160,
-          "Result": "▶Lifeform - Inside a living creature, microscopic or colossal."
+          "Result": "▶Inferno - Flame and noxious gases fill this place."
         },
         {
           "Floor": 161,
           "Ceiling": 170,
-          "Result": "▶Mystical - Arcane energies permeate this place."
+          "Result": "▶Lifeform - Inside a living creature, microscopic or colossal."
         },
         {
           "Floor": 171,
           "Ceiling": 180,
-          "Result": "▶Overgrown - Thriving ecosystems abound in this place."
+          "Result": "▶Mystical - Arcane energies permeate this place."
         },
         {
           "Floor": 181,
           "Ceiling": 190,
-          "Result": "▶Volcanic - Flame and noxious gases fill this place."
+          "Result": "▶Overgrown - Thriving ecosystems abound in this place."
         },
         {
           "Floor": 191,
