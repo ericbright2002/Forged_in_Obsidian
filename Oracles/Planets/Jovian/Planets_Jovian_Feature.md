@@ -26,7 +26,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 108-114 | Crystal cloud structures |
 | 115-121 | Field of charged particles |
 | 122-128 | Floating strands of lava from ejecta |
-| 139-135 | Irresistable air currents |
+| 129-135 | Irresistable air currents |
 | 136-142 | Liquid vortex |
 | 143-149 | Metallic rains |
 | 150-156 | Moon-like structures within the Atmosphere |
@@ -41,7 +41,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 208-214 | Ash-filled clouds |
 | 215-221 | Clouds of plasma |
 | 222-228 | Constant drizzle and fog |
-| 239-235 | Crushing surface gravity |
+| 229-235 | Crushing surface gravity |
 | 236-242 | Field of abruptly altered gravity |
 | 243-249 | Mountains of diamonds jutting up from below |
 | 250-256 | Multiple storm fronts clashing |
