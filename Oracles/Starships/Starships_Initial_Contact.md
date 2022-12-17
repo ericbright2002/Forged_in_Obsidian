@@ -18,7 +18,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 81-85 | In battle |
 | 86-90 | Unresponsive |
 | 91-95 | Destroyed |
-| 95-100 | ▶[Derelict](Derelicts_Outer_First_Look.md) |
+| 96-100 | ▶[Derelict](Derelicts_Outer_First_Look.md) |
 | 101-103 | Helpful |
 | 104-115 | All business |
 | 116-125 | Tolerant |
@@ -30,7 +30,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 181-185 | In crisis |
 | 186-190 | On emergency power |
 | 191-195 | Drifting dead in space |
-| 195-200 | ▶[Derelict](Derelicts_Outer_First_Look.md) |
+| 196-200 | ▶[Derelict](Derelicts_Outer_First_Look.md) |
 | 201-203 | Informative |
 | 204-215 | Seeking mutual benefit |
 | 216-225 | Bureaucratic protocols |
@@ -42,4 +42,4 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 281-285 | In a time crunch |
 | 286-290 | Looped distress call |
 | 291-295 | Core going critical |
-| 295-300 | ▶[Derelict](Derelicts_Outer_First_Look.md) |
+| 296-300 | ▶[Derelict](Derelicts_Outer_First_Look.md) |

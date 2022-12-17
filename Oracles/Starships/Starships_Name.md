@@ -74,6 +74,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 65-65 | Raya’s Promise |
 | 66-66 | Reaper |
 | 67-67 | Reforged Hope |
+| 68-68 | Relentless |
 | 69-69 | Royal Signet |
 | 70-70 | Rubicon |
 | 71-71 | Sareea’s Tribute |
