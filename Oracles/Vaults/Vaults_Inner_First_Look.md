@@ -37,7 +37,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 82-84 | Toxic atmosphere |
 | 85-87 | Toxic residue |
 | 88-90 | Well-preserved |
-| 90-93 | Wet or humid |
+| 91-93 | Wet or humid |
 | 94-100 | ▶[Descriptor](Core_Descriptor.md) + [Focus](Core_Focus.md) |
 | 101-103 | Arcing electrical sparks |
 | 104-106 | Automated messages |
@@ -69,7 +69,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 182-184 | Remains of ancient defenders |
 | 185-187 | Shifting gravity |
 | 188-190 | Signs of aggressive AI |
-| 190-193 | Whirring or clicking sound |
+| 191-193 | Whirring or clicking sound |
 | 194-200 | ▶[Descriptor](Core_Descriptor.md) + [Focus](Core_Focus.md) |
 | 201-203 | Augmented reality environment |
 | 204-206 | Cargo pods or storage units for unknown material |
@@ -101,5 +101,5 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 282-284 | Spatial instability |
 | 285-287 | Sticky, viscous surfaces |
 | 288-290 | Systems react to your presence |
-| 290-293 | Variable environment attuned to different biologies |
+| 291-293 | Variable environment attuned to different biologies |
 | 294-300 | ▶[Descriptor](Core_Descriptor.md) + [Focus](Core_Focus.md) |
