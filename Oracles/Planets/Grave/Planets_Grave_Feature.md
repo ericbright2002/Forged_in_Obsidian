@@ -26,7 +26,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 108-114 | Boiling lake |
 | 115-121 | Breached bunker |
 | 122-128 | Destroyed data hubs |
-| 139-135 | Fireballs from falling space debris |
+| 129-135 | Fireballs from falling space debris |
 | 136-142 | Layers of hardened dust from chemical attacks |
 | 143-149 | Looted industrial complexes |
 | 150-156 | Messages left by those who perished |
@@ -41,7 +41,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 208-214 | Broken infrastructure for mass transit systems |
 | 215-221 | Crumbling monuments to power |
 | 222-228 | Deep trenches dug for warfare |
-| 239-235 | Desert sands turned to glass |
+| 229-235 | Desert sands turned to glass |
 | 236-242 | Dry riverbed |
 | 243-249 | Evidence of the use of weapons of mass destruction |
 | 250-256 | Flotsam littered shoreline |
