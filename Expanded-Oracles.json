@@ -19776,7 +19776,7 @@
           "Result": "Well-preserved"
         },
         {
-          "Floor": 90,
+          "Floor": 91,
           "Ceiling": 93,
           "Result": "Wet or humid"
         },
@@ -19936,7 +19936,7 @@
           "Result": "Signs of aggressive AI"
         },
         {
-          "Floor": 190,
+          "Floor": 191,
           "Ceiling": 193,
           "Result": "Whirring or clicking sound"
         },
@@ -20096,7 +20096,7 @@
           "Result": "Systems react to your presence"
         },
         {
-          "Floor": 290,
+          "Floor": 291,
           "Ceiling": 293,
           "Result": "Variable environment attuned to different biologies"
         },
@@ -41344,7 +41344,7 @@
           "Result": "Destroyed"
         },
         {
-          "Floor": 95,
+          "Floor": 96,
           "Ceiling": 100,
           "Result": "▶Derelict"
         },
@@ -41404,7 +41404,7 @@
           "Result": "Drifting dead in space"
         },
         {
-          "Floor": 195,
+          "Floor": 196,
           "Ceiling": 200,
           "Result": "▶Derelict"
         },
@@ -41464,7 +41464,7 @@
           "Result": "Core going critical"
         },
         {
-          "Floor": 295,
+          "Floor": 296,
           "Ceiling": 300,
           "Result": "▶Derelict"
         }
@@ -43612,6 +43612,11 @@
           "Floor": 67,
           "Ceiling": 67,
           "Result": "Reforged Hope"
+        },
+        {
+          "Floor": 68,
+          "Ceiling": 68,
+          "Result": "Relentless"
         },
         {
           "Floor": 69,
@@ -55997,12 +56002,12 @@
       "Dice": "100",
       "Table": [
         {
-          "Floor": 9,
+          "Floor": 1,
           "Ceiling": 8,
           "Result": "Collapsed or broken structures or terrain"
         },
         {
-          "Floor": 1,
+          "Floor": 9,
           "Ceiling": 16,
           "Result": "Device or artifact with residual power or function"
         },
