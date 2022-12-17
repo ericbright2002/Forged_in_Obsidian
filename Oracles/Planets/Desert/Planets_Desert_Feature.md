@@ -26,7 +26,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 108-114 | Canyon pass continuing to narrow |
 | 115-121 | Crater hole filled with sand leading to underground tunnels |
 | 122-128 | Deep gorges cut through multi-hued strata of rock |
-| 139-135 | Inverted pyramids of rock formed by ground-hugging winds |
+| 129-135 | Inverted pyramids of rock formed by ground-hugging winds |
 | 136-142 | Layered waves of brightly colored sand |
 | 143-149 | Mountainous dunes undergoing an avalanche of sand |
 | 150-156 | Pocket caves dug by the claws of a long-dead creature |
@@ -41,7 +41,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 208-214 | Deep cylindrical hole with rocky walls and water at the bottom |
 | 215-221 | Field of lightning-shaped glass shards |
 | 222-228 | Flat sand sheets undulating with tiny ripples in the wind |
-| 239-235 | Granite boulders still eroding |
+| 229-235 | Granite boulders still eroding |
 | 236-242 | Heat waves distorting distant mountains |
 | 243-249 | Large depression that clearly held water at some point |
 | 250-256 | Plateau top composed of a huge and precariously balanced rock |
