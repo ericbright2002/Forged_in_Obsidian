@@ -26,7 +26,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 108-114 | Caverns with their own weather system |
 | 115-121 | Clearings choked by vines |
 | 122-128 | Cliffs with holes burrowed in the side |
-| 139-135 | Flooded rivers carrying debris |
+| 129-135 | Flooded rivers carrying debris |
 | 136-142 | Fog hovering in the canopy |
 | 143-149 | Lakes with their own tidal system |
 | 150-156 | Lightning strikes dancing within the canopy |
@@ -41,7 +41,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 208-214 | Crystal clear watering holes |
 | 215-221 | Deafening thunderstorms |
 | 222-228 | Deep series of caves |
-| 239-235 | Dense underbrush with unique defense mechanisms |
+| 229-235 | Dense underbrush with unique defense mechanisms |
 | 236-242 | Fauna with extreme camouflage |
 | 243-249 | Geysers of mineral rich water |
 | 250-256 | Intense heat waves |
