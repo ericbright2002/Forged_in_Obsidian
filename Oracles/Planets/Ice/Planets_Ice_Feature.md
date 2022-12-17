@@ -26,7 +26,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 108-114 | Bridge of ice connecting glaciers |
 | 115-121 | Devastating hail storms |
 | 122-128 | Emeralds of ice |
-| 139-135 | Fierce lightning fueled by solar radiation |
+| 129-135 | Fierce lightning fueled by solar radiation |
 | 136-142 | Hidden valley with relatively little snow |
 | 143-149 | Preserved midden heap of an ancient people |
 | 150-156 | River of glacial melt |
@@ -41,7 +41,7 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 208-214 | Crystal clear ice reflecting the stars |
 | 215-221 | Cylinders of snow gathering speed as they roll |
 | 222-228 | Dark ice formed into geometric patterns |
-| 239-235 | Deep cave with steamy Atmosphere |
+| 229-235 | Deep cave with steamy Atmosphere |
 | 236-242 | Freezing rain |
 | 243-249 | Hollow dome of ice |
 | 250-256 | Impact crater that has shattered the ice |
