@@ -1,9 +1,6 @@
 # Readme
 Welcome to my Starforged Starter Vault!  I set this up to play Starforged in a way that fits me best.
 
-## Starsmith: Expanded Oracles
-I've added in my first supplement for Starforged called [Starsmith: Expanded Oracles](https://www.drivethrurpg.com/product/417619/Starsmith-Expanded-Oracles) which you can get on DriveThruRPG.  As of now, the POD version is not yet ready, but I aim to have it available close to the beginning of the year (Jan 2023).  For now, you can either download the PDF file on DriveThru, use the expanded oracles here in this Obsidian vault, or download the Expanded-Oracles.JSON file which includes the original Starforged oracles as well.  In the PDF version, I talk about rolling your action die (1d6) with the percentile die to see which table to use.  Since that's not really possible with Inline Scripts in Obsidian, I made each table a single 1d300 table instead of three separate 1d100 tables.  If you find yourself using and enjoying the expanded oracles, I'd appreciate you heading over to DriveThru and purchasing it for whatever you think is a fair price.  Thanks!
-
 ## Fonts
 For the headings, I'm using [Xolonium font](https://www.fontspace.com/xolonium-font-f17644) and [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans) as the interface font.
 
@@ -25,35 +22,23 @@ Here were some specific design goals:
 ## Setting up Your Campaign
 To get started playing, you'll first want to set up your own character.  
 
-1. **Vault_Info:** To make the images work with Inline Scripts, you have to hard code the location of the `Images` folder in the valut.  Go the `Support` folder and open the `Vault_Info` note.  
-	* **THIS STEP IS CRITICAL!**  The frontmatter variable `imageLocation` in the `Vault_Info` page must be hard-coded to your specific location.  Make sure it still has the `"(` at the front and the `Images/"` at the end.  You can run the Inline Script command below to make all the images work once you have your vault location and path.
-	  
-	  After changing the path below to your specific path, type :: at the end of the command and Inline Scripts will reset all the image paths.  You will have to run this command everytime you change vault locations.  The command will reappear after use.
-
->[!NOTE] THIS IS CRITICAL!
-	  >***After replacing your specific image path using forward slashes (/) instead of back slashes (\\), type :: at the end of the command below to reset the hard-coded image path for the vault and character tracks.  You will have to manually reset any Progress Tracks you have already created.***
-	  >>[!TIP] ;;setimagepath "C:/Users/ericb/Desktop/SFV3/Images/"
-
-2. **Oracles:** Make sure the oracle tables are registered with Inline Scripts as noted below:
-   >[!NOTE] THIS IS CRITICAL!
-	  >***Type :: at the end of the commands below to reset the oracle tables and then register them with Inline Scripts.***
-	  >>[!TIP] ;;tbl reset
-	  >
-	  >>[!TIP] ;;tbl add Oracles
-
-3. **Stats:** Under the `Character` folder, got to the `Stats` note and set your stat values (Edge, Heart, Iron, Shadow, Wits) up in the frontmatter.  The frontmatter is the section at the top of a note enclosed by `---` marks.  These act like variables for many of the Inline Scripts, so make sure these are accurate.
+1. **Stats:** Under the `Character` folder, got to the `Stats` note and set your stat values (Edge, Heart, Iron, Shadow, Wits) up in the frontmatter.  The frontmatter is the section at the top of a note enclosed by `---` marks.  These act like variables for many of the Inline Scripts, so make sure these are accurate.
    
-3. **Character Sheet:** In the `Character_Sheet` note, fill in your name, a picture if you want, and your backstory.  Then, scroll down to the bottom of the note and embed whichever assets you want your character to have.  Use the command `![[Ace]]` to embed the Ace asset for example.  This note pulls in everything else from the other notes in the `Character` folder.
+2. **Character Sheet:** In the `Character_Sheet` note, fill in your name, a picture if you want, and your backstory.  Then, scroll down to the bottom of the note and embed whichever assets you want your character to have.  Use the command `![[Ace]]` to embed the Ace asset for example.  This note pulls in everything else from the other notes in the `Character` folder.
    
-4. **Background Vow and Inciting Incident:** To set your first vows, right click on the `Progress` folder and create a new note.  This will set a new Progress note with the appropriate template of frontmatter variables.  
-	- **Filename:** At the very top of the note is the file name which should be a single word using only letters or numbers or underscore.  For example, `Back_Vow` or `CombatGoal1` or `AlienFriends` are all fine where `Background Vow` or `Find the Sword` will cause the scripts to fail.  I suggest short file names such as `Combat1` or `Prog2` only because you'll need to type out the full filename for Inline Scripts to access it.
+3. **Background Vow and Inciting Incident:** To set your first vow, you can either right click on the `Progress` folder, create a new note, and manually fill out the frontmatter variables OR use the Inline Script in the Note box below.  First, let me tell you about all the variables at the top of each file that will have a progress track (like vows, combat, etc.).  
+	- **Filename:** At the very top of the note is the file name which should be a single word using only letters or numbers or underscore.  For example, `Back_Vow` or `CombatGoal1` or `AlienFriends` are all fine where `Background Vow` or `Find the Sword` will cause the scripts to fail.  I suggest short file names such as `Combat1` or `Prog2` only because you'll need to type out the full filename for Inline Scripts to access it later on.
 	  
-	- **Name:** In the frontmatter, set the name of your vow which can be any word or phrase such as `Survive the Meteor Shower` or `Escape the Black Hole's Gravity`.
+	- **Name:** The name of your vow which can be any word or phrase such as `Survive the Meteor Shower` or `Escape the Black Hole's Gravity`.
 	  
-	- **Difficulty:** In the frontmatter, set the difficult to either Troublesome, Dangerous, Formidable, Extreme, or Epic.  Make sure to capitalize the first letter and spell the word correct for Inline Scripts to use.
+	- **Difficulty:** The difficulty is Troublesome, Dangerous, Formidable, Extreme, or Epic.  If typing manually, make sure to capitalize the first letter and spell the word correct for Inline Scripts to use.
 	  
 	- **Other Frontmatter:** You don't need to worry about the other frontmatter variables as they are all automated.
 	  
+   >[!NOTE] Setting Your Background Vow
+	  >***To use Inline Scripts to set a new file with a progress track, type :: at the end of the command below.  Let's create a file for your background vow now.***
+	  >>[!TIP] ;;createprogress
+
 5. **Create a New Journal Note and Play!:** Add a new note to the `Journals` folder, and start playing!
 
 ### No Map?
