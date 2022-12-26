@@ -235,7 +235,7 @@ if (newValue > Number(max)) {
     newValue = Number(max);
 }
 expand("notevars set " + meterPath + " " + name + " " + newValue);
-let callout = "> [!mechanics]- " + meter + "[" + name + "] set to " + newValue + " out of " + max + ".\n\n";
+let callout = "> [!mechanics]- " + meter + " set to " + newValue + " out of " + max + ".\n\n";
 return callout;
 ```
 __
@@ -291,7 +291,7 @@ if (newValue < min) {
         text = " You had to lose more " + name + " than you had. " + leftover + " still to lose.";
 }
 expand("notevars set " + meterPath + " " + name + " " + newValue);
-let callout = "> [!mechanics]+ " + meter + "[" + name + "] set to " + newValue + " out of " + max + ".\n> " + text + "\n\n";
+let callout = "> [!mechanics]+ " + meter + " set to " + newValue + " out of " + max + ".\n> " + text + "\n\n";
 return callout;
 ```
 __
