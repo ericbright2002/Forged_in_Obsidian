@@ -503,7 +503,7 @@ __
 __
 ```js
 let result = expand("getOracle Oracles/Moves/Moves_Pay_the_Price.md");
-let callout = "> [!oracle]- Pay the Price!\n> **Result:** " + result + "\n> \n> **Additional Details:** \n\n";
+let callout = "> [!oracle]- Pay the Price! **Result:** " + result + "\n> \n> **Additional Details:** \n\n";
 return callout;
 ```
 __
