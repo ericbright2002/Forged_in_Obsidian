@@ -22,11 +22,20 @@ Here were some specific design goals:
 ## Setting up Your Campaign
 To get started playing, you'll first want to set up your own character.  
 
-1. **Stats:** Under the `Character` folder, got to the `Stats` note and set your stat values (Edge, Heart, Iron, Shadow, Wits) up in the frontmatter.  The frontmatter is the section at the top of a note enclosed by `---` marks.  These act like variables for many of the Inline Scripts, so make sure these are accurate.
+1. **Oracles:** Not sure if this is necessary, but just in case, start by resetting the oracle files so that Inline Scripts gets all the updated oracles.
+
+   >[!NOTE] Reset the Oracles
+	  >***Type :: at the end of both commands below.***
+
+>[!TIP] ;;tbl reset
+
+>[!TIP] ;;tbl add Oracles
+
+2. **Stats:** Under the `Character` folder, got to the `Stats` note and set your stat values (Edge, Heart, Iron, Shadow, Wits) up in the frontmatter.  The frontmatter is the section at the top of a note enclosed by `---` marks.  These act like variables for many of the Inline Scripts, so make sure these are accurate.
    
-2. **Character Sheet:** In the `Character_Sheet` note, fill in your name, a picture if you want, and your backstory.  Then, scroll down to the bottom of the note and embed whichever assets you want your character to have.  Use the command `![[Ace]]` to embed the Ace asset for example.  This note pulls in everything else from the other notes in the `Character` folder.
+3. **Character Sheet:** In the `Character_Sheet` note, fill in your name, a picture if you want, and your backstory.  Then, scroll down to the bottom of the note and embed whichever assets you want your character to have.  Use the command `![[Ace]]` to embed the Ace asset for example.  This note pulls in everything else from the other notes in the `Character` folder.
    
-3. **Background Vow and Inciting Incident:** To set your first vow, you can either right click on the `Progress` folder, create a new note, and manually fill out the frontmatter variables OR use the Inline Script in the Note box below.  First, let me tell you about all the variables at the top of each file that will have a progress track (like vows, combat, etc.).  
+4. **Background Vow and Inciting Incident:** To set your first vow, you can either right click on the `Progress` folder, create a new note, and manually fill out the frontmatter variables OR use the Inline Script in the Note box below.  First, let me tell you about all the variables at the top of each file that will have a progress track (like vows, combat, etc.).  
 	- **Filename:** At the very top of the note is the file name which should be a single word using only letters or numbers or underscore.  For example, `Back_Vow` or `CombatGoal1` or `AlienFriends` are all fine where `Background Vow` or `Find the Sword` will cause the scripts to fail.  I suggest short file names such as `Combat1` or `Prog2` only because you'll need to type out the full filename for Inline Scripts to access it later on.
 	  
 	- **Name:** The name of your vow which can be any word or phrase such as `Survive the Meteor Shower` or `Escape the Black Hole's Gravity`.
