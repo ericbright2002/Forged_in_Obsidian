@@ -62,8 +62,11 @@ function getTrackImage(currentProgress) {
      // NOTE: imageLocation should return the image folder of your vault. 
     // "(app://local/C:/Users/ericb/Desktop/SFV3/Images/"
     let imageLocation = getVar("Support/Vault_Info", "imageLocation");
-    let trackImage = "![Img|350]" + imageLocation + "Shortcut_Images/ProgressTracks/progress-track-" + currentProgress + ".svg)";
-    return trackImage;   
+    let localTrack = "![Img|350]" + imageLocation + "Shortcut_Images/ProgressTracks/progress-track-" + currentProgress + ".svg)";
+    let webTrack = "<img width=\"350px\" src=\"https://raw.githubusercontent.com/ericbright2002/Forged_in_Obsidian/main/Images/Shortcut_Images/ProgressTracks/progress-track-" + currentProgress + ".svg\">";
+    let trackImage = "\"[[progress-track-" + currentProgress + ".svg]]\"";
+    return trackImage;
+    // return webTrack;
 }
 ```
 __
@@ -135,7 +138,8 @@ let fullBoxes = Math.floor(currentProgress/4);
 
 expand("notevars set " + trackTitle + " Progress " + currentProgress);
 let trackImage = getTrackImage(currentProgress);
-expand("notevars set " + trackTitle + " TrackImage \"" + trackImage + "\"");
+//expand("notevars set " + trackTitle + " TrackImage \"" + trackImage + "\"");
+expand("notevars set " + trackTitle + " TrackImage " + trackImage);
 if (givenTrack == "QUESTS" || givenTrack == "BONDS" || givenTrack == "DISCOVERIES") {
     let xpEarned = fullBoxes * 2;
     expand("notevars set " + trackTitle + " XPEarned " + xpEarned);
