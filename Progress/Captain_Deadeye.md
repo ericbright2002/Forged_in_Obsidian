@@ -3,13 +3,16 @@ Name: Captain Deadeye
 Difficulty: Dangerous
 Progress: 24
 tags: incomplete
-TrackImage: "![Img|350](app://local/C:/Users/ericb/Desktop/SFV3/Images/IS_Shortcut_Images/ProgressTracks/progress-track-24.svg)"
+TrackImage: "[[progress-track-24.svg]]"
 ---
 
 # `=this.Name`
 **Difficulty:** `=this.Difficulty`
 
-`=this.TrackImage`
+```dataview
+LIST without id embed(link(meta(TrackImage).path, "350"))
+WHERE contains(file.path, this.file.path)
+```
 
 ## Notes
 Perhaps you've established a connection with a freighter captain, but need more info.  You might use the character Inline Script command as follows:

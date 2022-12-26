@@ -3,13 +3,16 @@ Name: Hack into the Database
 Difficulty: Dangerous
 Progress: 32
 tags: incomplete
-TrackImage: "![Img|350](app://local/C:/Users/ericb/Desktop/SFV3/Images/IS_Shortcut_Images/ProgressTracks/progress-track-32.svg)"
+TrackImage: "[[progress-track-32.svg]]"
 ---
 
 # `=this.Name`
 **Difficulty:** `=this.Difficulty`
 
-`=this.TrackImage`
+```dataview
+LIST without id embed(link(meta(TrackImage).path, "350"))
+WHERE contains(file.path, this.file.path)
+```
 
 ## Notes
 On this progress track, you might be trying to hack into a database without being noticed.  Therefore, in your journal entry you might roll a Gain Ground move +Wits as follows:

@@ -3,13 +3,16 @@ Name: Find Your True Heritage
 Difficulty: Extreme
 Progress: 6
 tags: incomplete
-TrackImage: "![Img|350](app://local/C:/Users/ericb/Desktop/SFV3/Images/IS_Shortcut_Images/ProgressTracks/progress-track-6.svg)"
+TrackImage: "[[progress-track-6.svg]]"
 ---
 
 # `=this.Name`
 **Difficulty:** `=this.Difficulty`
 
-`=this.TrackImage`
+```dataview
+LIST without id embed(link(meta(TrackImage).path, "350"))
+WHERE contains(file.path, this.file.path)
+```
 
 ## Notes
 Maybe this is your background vow, and you found a clue but don't know what it means.  Ask the oracle or an Action/Theme using an Inline Scripts command as follows:

@@ -1,15 +1,18 @@
 ---
 Name: Space Pirates Attack!
 Difficulty: Formidable
-Progress: 16
+Progress: 24
 tags: incomplete
-TrackImage: "![Img|350](app://local/C:/Users/ericb/Desktop/SFV3/Images/IS_Shortcut_Images/ProgressTracks/progress-track-16.svg)"
+TrackImage: "[[progress-track-24.svg]]"
 ---
 
 # `=this.Name`
 **Difficulty:** `=this.Difficulty`
 
-`=this.TrackImage`
+```dataview
+LIST without id embed(link(meta(TrackImage).path, "350"))
+WHERE contains(file.path, this.file.path)
+```
 
 
 ## Notes
@@ -25,5 +28,4 @@ These space pirates might be from a faction, so I've used an Inline Script comma
 > **Quirk:** Conceals individual identity
 > **Project:** Disrupt the operations of a rival
 > **Rumor:** Suffering a shortage of key workers or personnel
-
 
