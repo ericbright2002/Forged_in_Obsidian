@@ -1,4 +1,5 @@
-# Your Name Here
+# Bill Clayson - Cooter
+![[Baseball-by-Choonhachat.jpg|200]]
 Maybe put an image here or something.
 
 ## Backstory
@@ -32,7 +33,7 @@ FROM #conditions
 
 ## Legacies
 ```dataview
-TABLE TrackImage
+TABLE embed(link(meta(TrackImage).path, "350")) AS Progress
 FROM #legacy
 ```
 ```dataview
@@ -41,13 +42,16 @@ FROM #legacy
 ```
 ## Vows IN-PROGRESS
 ```dataview
-TABLE Name, TrackImage
+TABLE Name, embed(link(meta(TrackImage).path, "350")) AS Progress
 FROM #incomplete WHERE file.name != "Progress_Template" 
 ```
 
 ## Assets
-![[Starship]]
-<hr>
+![[Sniper]]
 
-![[Archer]]
+![[Scoundrel]]
+
+![[Scavenger]]
+
+
 

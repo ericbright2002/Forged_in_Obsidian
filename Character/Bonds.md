@@ -5,7 +5,10 @@ XPSpent: 0
 Progress: 0
 Difficulty: Epic
 tags: legacy
-TrackImage: "![Img|350](app://local/C:/Users/ericb/Desktop/SFV3/Images/IS_Shortcut_Images/ProgressTracks/progress-track-0.svg)"
+TrackImage: "[[progress-track-0.svg]]"
 ---
-`=this.TrackImage`
+```dataview
+LIST without id embed(link(meta(TrackImage).path, "350"))
+WHERE contains(file.path, this.file.path)
+```
 
