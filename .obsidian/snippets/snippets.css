@@ -313,3 +313,8 @@
 .theme-light span[src$="#invert_W_C"] img{
   filter: invert(1) hue-rotate(180deg) contrast(1.45);
 }
+
+ul.dataview.list-view-ul {
+	list-style: none;
+	padding-left: 0;
+}
