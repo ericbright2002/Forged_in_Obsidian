@@ -57,7 +57,7 @@ __
 ^getOracle ("[^ \t\\:*?"<>|][^\t\\:*?"<>|]*"|[^ \t\\:*?"<>|]+)$
 __
 ```js
-$1 = $1.replaceAll(/^\"|\"$/g, "");
+oracle = $1.replaceAll(/^\"|\"$/g, "");
 let iResult = expand("tbl roll " + $1);
 let capResult = iResult[0].toUpperCase();
 var trueResult = "";
