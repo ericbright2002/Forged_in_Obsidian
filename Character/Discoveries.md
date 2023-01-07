@@ -2,6 +2,7 @@
 Name: Discoveries
 XPEarned: 0
 XPSpent: 0
+XPRolledOver: No
 Progress: 0
 Difficulty: Epic
 tags: legacy
