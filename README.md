@@ -170,6 +170,16 @@ While you are free to use any and all of the commands the Inline Scripts offers 
 	  <u>Example use:</u> `;;markprogress PirateFight1 1` will mark progress once filling in the appropriate number of tick marks depending on the Difficulty level of the vow.
 	  
 	  <hr>
+	* **clearprogress {filename} {amount of TICKS}:** This command clears progress the given amount of TICKS on the progress track contained within the given file.  Some moves says clear progress boxes and others say units of progress, so I had to use the number of ticks.  That means if it says to clear four boxes, you would use 16 ticks.  If it's a dangerous vow that says to clear three units of progress, that would be six boxes meaning you would use 24 ticks.
+	  
+	  <u>Example use:</u> `;;clearprogress PirateFight1 16` will clear 4 boxes of progress on the vow.
+	  
+	  <hr>
+	* **setprogress {filename} {amount}:** With this command you can set any progress track to any value you need.  The amount should be given in the number of ticks.  That means for regular progress tracks it should be out of 40, and for Legacy tracks it should be out of 80.
+	  
+	  <u>Example use:</u> `;;setprogress Bonds 53` will set the Bonds track to 13 ticks and mark it as rolled over for calculating XP Earned.
+	  
+	  <hr>
 	* **endprogress {filename}:** This command makes the final progress move to Fulfill Your Vow or Take Decisive Action on an objective and it marks the file as a completed vow.
 	  
 	  <u>Example use:</u> `;;endprogress PirateFight1` will roll the challenge dice and compare them to your current progress.
