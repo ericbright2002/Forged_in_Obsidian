@@ -81,39 +81,41 @@ While you are free to use any and all of the commands the Inline Scripts offers 
    
 8. <u>markprogress {filename} {amount}</u> - Marks progress the given number of times on the track in the given file.
    
-9. <u>setprogress {filename} {amount}</u> - Set progress on the track in the given file to the amount of ticks, meaning the amount is out of 40.
+9. <u>clearprogress {filename} {amount of TICKS}</u> - Clears progress the given number of TICKS on the track in the given file.
    
-10. <u>resetlegacies</u> - Brings up popup menus for either resetting all legacies and XP (for starting a new game or character) or resetting individual legacy tracks for when you rollover.
+10. <u>setprogress {filename} {amount}</u> - Set progress on the track in the given file to the amount of ticks, meaning the amount is out of 40.
    
-11. <u>endprogress {fiilename}</u> - Makes the progress move and Fulfill Your Vow or Take Decisive Action on an objective.
+11. <u>resetlegacies</u> - Brings up popup menus for either resetting all legacies and XP (for starting a new game or character) or resetting individual legacy tracks for when you rollover.
    
-12. <u>oracle {question}</u> - Ask a question and then select the oracle to roll from the popup menu.
+12. <u>endprogress {fiilename}</u> - Makes the progress move and Fulfill Your Vow or Take Decisive Action on an objective.
+   
+13. <u>oracle {question}</u> - Ask a question and then select the oracle to roll from the popup menu.
 
-13. <u>yesno {odds} {question}</u> - Ask the oracle a yes/no question with the given odds.
+14. <u>yesno {odds} {question}</u> - Ask the oracle a yes/no question with the given odds.
 
-14. <u>at {question}</u> - Ask a question and get an Action/Theme result as an answer.
+15. <u>at {question}</u> - Ask a question and get an Action/Theme result as an answer.
 
-15. <u>df {question}</u> - Ask a question and get a Descriptor/Focus result as an answer.
+16. <u>df {question}</u> - Ask a question and get a Descriptor/Focus result as an answer.
 
-16. <u>ptp</u> - Rolls on the oracle from the Pay the Price move.
+17. <u>ptp</u> - Rolls on the oracle from the Pay the Price move.
 
-17. <u>character</u> - Rolls a full NPC with all the character oracles.
+18. <u>character</u> - Rolls a full NPC with all the character oracles.
 
-18. <u>faction</u> - Rolls a full faction with all the faction oracles.
+19. <u>faction</u> - Rolls a full faction with all the faction oracles.
 
-19. <u>sector</u> - Rolls a full sector including planets and settlements.
+20. <u>sector</u> - Rolls a full sector including planets and settlements.
 
-20. <u>settlement</u> - Rolls a full settlement using the settlement oracles.
+21. <u>settlement</u> - Rolls a full settlement using the settlement oracles.
 
-21. <u>starship {region}</u> - Rolls a full starship using the starship oracles in the given region.
+22. <u>starship {region}</u> - Rolls a full starship using the starship oracles in the given region.
 
-22. <u>creature {environment}</u> - Rolls a full creature using the creature oracles of the given environment.
+23. <u>creature {environment}</u> - Rolls a full creature using the creature oracles of the given environment.
 
-23. <u>planet {class} {region}</u> - Rolls a full planet of the given class in the given region.
+24. <u>planet {class} {region}</u> - Rolls a full planet of the given class in the given region.
 
-24. <u>derelict</u> - Rolls what you initially see at a derelict.
+25. <u>derelict</u> - Rolls what you initially see at a derelict.
 
-25. <u>vault</u> - Rolls what you initially see at a precursor vault.
+26. <u>vault</u> - Rolls what you initially see at a precursor vault.
 
 ### Details of Individual Commands
 
