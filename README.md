@@ -46,7 +46,8 @@ To get started playing, you'll first want to set up your own character.
 	  
    >[!NOTE] Setting Your Background Vow
 	  >***To use Inline Scripts to set a new file with a progress track, type :: at the end of the command below.  Let's create a file for your background vow now.***
-	  >>[!TIP] ;;createprogress
+
+>[!TIP] ;;createprogress
 
 5. **Create a New Journal Note and Play!:** Add a new note to the `Journals` folder, and start playing!
 
@@ -80,35 +81,39 @@ While you are free to use any and all of the commands the Inline Scripts offers 
    
 8. <u>markprogress {filename} {amount}</u> - Marks progress the given number of times on the track in the given file.
    
-9. <u>endprogress {fiilename}</u> - Makes the progress move and Fulfill Your Vow or Take Decisive Action on an objective.
+9. <u>setprogress {filename} {amount}</u> - Set progress on the track in the given file to the amount of ticks, meaning the amount is out of 40.
    
-10. <u>oracle {question}</u> - Ask a question and then select the oracle to roll from the popup menu.
+10. <u>resetlegacies</u> - Brings up popup menus for either resetting all legacies and XP (for starting a new game or character) or resetting individual legacy tracks for when you rollover.
+   
+11. <u>endprogress {fiilename}</u> - Makes the progress move and Fulfill Your Vow or Take Decisive Action on an objective.
+   
+12. <u>oracle {question}</u> - Ask a question and then select the oracle to roll from the popup menu.
 
-11. <u>yesno {odds} {question}</u> - Ask the oracle a yes/no question with the given odds.
+13. <u>yesno {odds} {question}</u> - Ask the oracle a yes/no question with the given odds.
 
-12. <u>at {question}</u> - Ask a question and get an Action/Theme result as an answer.
+14. <u>at {question}</u> - Ask a question and get an Action/Theme result as an answer.
 
-13. <u>df {question}</u> - Ask a question and get a Descriptor/Focus result as an answer.
+15. <u>df {question}</u> - Ask a question and get a Descriptor/Focus result as an answer.
 
-14. <u>ptp</u> - Rolls on the oracle from the Pay the Price move.
+16. <u>ptp</u> - Rolls on the oracle from the Pay the Price move.
 
-15. <u>character</u> - Rolls a full NPC with all the character oracles.
+17. <u>character</u> - Rolls a full NPC with all the character oracles.
 
-16. <u>faction</u> - Rolls a full faction with all the faction oracles.
+18. <u>faction</u> - Rolls a full faction with all the faction oracles.
 
-17. <u>sector</u> - Rolls a full sector including planets and settlements.
+19. <u>sector</u> - Rolls a full sector including planets and settlements.
 
-18. <u>settlement</u> - Rolls a full settlement using the settlement oracles.
+20. <u>settlement</u> - Rolls a full settlement using the settlement oracles.
 
-19. <u>starship {region}</u> - Rolls a full starship using the starship oracles in the given region.
+21. <u>starship {region}</u> - Rolls a full starship using the starship oracles in the given region.
 
-20. <u>creature {environment}</u> - Rolls a full creature using the creature oracles of the given environment.
+22. <u>creature {environment}</u> - Rolls a full creature using the creature oracles of the given environment.
 
-21. <u>planet {class} {region}</u> - Rolls a full planet of the given class in the given region.
+23. <u>planet {class} {region}</u> - Rolls a full planet of the given class in the given region.
 
-22. <u>derelict</u> - Rolls what you initially see at a derelict.
+24. <u>derelict</u> - Rolls what you initially see at a derelict.
 
-23. <u>vault</u> - Rolls what you initially see at a precursor vault.
+25. <u>vault</u> - Rolls what you initially see at a precursor vault.
 
 ### Details of Individual Commands
 
