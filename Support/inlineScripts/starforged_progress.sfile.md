@@ -105,7 +105,7 @@ __
 
 
 __
-^markprogress ([_a-zA-Z0-9]*) ([0-9]*)$
+^setprogress ([_a-zA-Z0-9]*) ([0-9]+)$
 __
 ```js
 let givenTrack = $1.toUpperCase();
@@ -123,6 +123,77 @@ switch (givenTrack) {
     default:
         trackTitle = "Progress/" + $1;
 }
+let difficulty = getVar(trackTitle, "Difficulty");
+let name = getVar(trackTitle, "Name");
+let progToSet = $2;
+
+var xpRolledOver = "No";
+if (progToSet > 40) {
+    if (givenTrack == "QUESTS" || givenTrack == "BONDS" || givenTrack == "DISCOVERIES") {
+        xpRolledOver = getVar(trackTitle, "XPRolledOver");
+        if (xpRolledOver == "No") { 
+            progToSet = progToSet - 40;
+            xpRolledOver = "Yes";
+            expand("notevars set " + trackTitle + " XPRolledOver Yes");
+        } else {
+            progToSet = 40;
+            xpRolledOver = "Yes";
+        }
+    } else {
+        progToSet = 40;
+    }
+} else {
+    if (givenTrack == "QUESTS" || givenTrack == "BONDS" || givenTrack == "DISCOVERIES") {
+        expand("notevars set " + trackTitle + " XPRolled Over No");
+    }
+}
+let fullBoxes = Math.floor(progToSet/4);
+
+expand("notevars set " + trackTitle + " Progress " + progToSet);
+let trackImage = getTrackImage(progToSet);
+expand("notevars set " + trackTitle + " TrackImage " + trackImage);
+
+var xpEarned = 0;
+if (givenTrack == "QUESTS" || givenTrack == "BONDS" || givenTrack == "DISCOVERIES") {
+    if (xpRolledOver == "Yes") {
+        xpEarned = fullBoxes + 20;
+    } else {
+        xpEarned = fullBoxes * 2;
+    }
+    expand("notevars set " + trackTitle + " XPEarned " + xpEarned);
+}
+
+var trueTrack = "![[" + trackImage.replace(/["]+/g , "").replace(/\[/g, "").replace(/\]/g, "") + "|350]]";
+
+
+let callout = "> [!progress]- " + name + ", Progress Set To: " + progToSet + " (Total: " + fullBoxes + " ![[progress-box-4.svg|15]])\n> File Name: [[" + trackTitle + "]], Difficulty: " + difficulty + "\n> " + fullBoxes + " full boxes or " + progToSet + " ticks\n> \n> " + trueTrack + "\n> \n> Milestone: \n\n";
+
+return callout;
+```
+__
+setprogress {note file name that contains the progress track} {# of ticks from 0-40} - This sets a progress track to the given number of ticks.  Remember there are four ticks per box.
+
+
+__
+^markprogress ([_a-zA-Z0-9]*) ([+-][0-9]*)$
+__
+```js
+let givenTrack = $1.toUpperCase();
+var trackTitle = "";
+switch (givenTrack) {
+    case "QUESTS":
+        trackTitle = "Character/Quests";
+        break;
+    case "BONDS":
+        trackTitle = "Character/Bonds";
+        break;
+    case "DISCOVERIES":
+        trackTitle = "Character/Discoveries";
+        break;
+    default:
+        trackTitle = "Progress/" + $1;
+        break;
+}
 var currentProgress = getVar(trackTitle, "Progress");
 let difficulty = getVar(trackTitle, "Difficulty");
 let ticksPerProgress = ticksPP(difficulty);
@@ -131,21 +202,44 @@ let progressToMark = $2;
 let ticksToAdd = Number(ticksPerProgress) * Number(progressToMark);
 currentProgress = currentProgress + ticksToAdd;
 
+var xpRolledOver = "No";
 if (currentProgress > 40) {
-    currentProgress = 40;
+    if (givenTrack == "QUESTS" || givenTrack == "BONDS" || givenTrack == "DISCOVERIES") {
+        xpRolledOver = getVar(trackTitle, "XPRolledOver");
+        if (xpRolledOver == "No") { 
+            currentProgress = currentProgress - 40;
+            xpRolledOver = "Yes";
+            expand("notevars set " + trackTitle + " XPRolledOver Yes");
+        } else {
+            currentProgress = 40;
+            xpRolledOver = "Yes";
+        }
+    } else {
+        currentProgress = 40;
+    }
+} else {
+    if (givenTrack == "QUESTS" || givenTrack == "BONDS" || givenTrack == "DISCOVERIES") {
+        expand("notevars set " + trackTitle + " XPRolledOver No");
+    }
 }
 let fullBoxes = Math.floor(currentProgress/4);
 
 expand("notevars set " + trackTitle + " Progress " + currentProgress);
 let trackImage = getTrackImage(currentProgress);
-//expand("notevars set " + trackTitle + " TrackImage \"" + trackImage + "\"");
 expand("notevars set " + trackTitle + " TrackImage " + trackImage);
+
+var xpEarned = 0;
 if (givenTrack == "QUESTS" || givenTrack == "BONDS" || givenTrack == "DISCOVERIES") {
-    let xpEarned = fullBoxes * 2;
+    if (xpRolledOver == "Yes") {
+        xpEarned = fullBoxes + 20;
+    } else {
+        xpEarned = fullBoxes * 2;
+    }
     expand("notevars set " + trackTitle + " XPEarned " + xpEarned);
 }
 
 var trueTrack = "![[" + trackImage.replace(/["]+/g , "").replace(/\[/g, "").replace(/\]/g, "") + "|350]]";
+
 
 let callout = "> [!progress]- " + name + ", " + progressToMark + " Progess Marked (Total: " + fullBoxes + " ![[progress-box-4.svg|15]])\n> File Name: [[" + trackTitle + "]], Difficulty: " + difficulty + "\n> " + progressToMark + " progress marked or " + ticksToAdd + " ticks for a total of " + fullBoxes + " full boxes or " + currentProgress + " ticks\n> \n> " + trueTrack + "\n> \n> Milestone: \n\n";
 
@@ -153,6 +247,96 @@ return callout;
 ```
 __
 markprogress {note file name that contains the progress track} {times to mark progress} - The number of times to mark progress will typically be only 1 or 2 (unless a strong hit takes you to 3 or something).  You don't need to calculate the number of ticks to mark.  For example, on a Dangerous track if you want to mark progress once, just use the number 1.  It will calculate that one progress means 8 ticks (or two boxes) on its own.
+
+
+__
+^resetlegacies
+__
+```js
+let trackImage = getTrackImage(0);
+let legOpt = ["Reset all legacy progress to 0", "Reset Bonds progress to 0", "Reset Discoveries progress to 0", "Reset Quests progress to 0"];
+var legType = popups.pick("Which legacy progress tracks would you like to reset?", legOpt, 0);
+var xpType = popups.pick("Reset the XP to 0 as well?", ["No", "Yes"], 0);
+switch (legType) {
+    case 0:
+        expand("notevars set Character/Bonds XPRolledOver Yes");
+        expand("notevars set Character/Bonds Progress 0");
+        expand("notevars set Character/Bonds TrackImage " + trackImage);
+        expand("notevars set Character/Discoveries XPRolledOver Yes");
+        expand("notevars set Character/Discoveries Progress 0");
+        expand("notevars set Character/Discoveries TrackImage " + trackImage);
+        expand("notevars set Character/Quests XPRolledOver Yes");
+        expand("notevars set Character/Quests Progress 0");
+        expand("notevars set Character/Quests TrackImage " + trackImage);
+        if (xpType == 1) {
+            expand("notevars set Character/Bonds XPRolledOver No");
+            expand("notevars set Character/Discoveries XPRolledOver No");
+            expand("notevars set Character/Quests XPRolledOver No");
+            expand("notevars set Character/Bonds XPEarned 0");
+            expand("notevars set Character/Discoveries XPEarned 0");
+            expand("notevars set Character/Quests XPEarned 0");
+            expand("notevars set Character/Bonds XPSpent 0");
+            expand("notevars set Character/Discoveries XPSpent 0");
+            expand("notevars set Character/Quests XPSpent 0");
+        }
+        break;
+    case 1:
+        expand("notevars set Character/Bonds XPRolledOver Yes");
+        expand("notevars set Character/Bonds Progress 0");
+        expand("notevars set Character/Bonds TrackImage " + trackImage);
+        if (xpType == 1) {
+            expand("notevars set Character/Bonds XPRolledOver No");
+            expand("notevars set Character/Bonds XPEarned 0");
+            expand("notevars set Character/Bonds XPSpent 0");
+        }
+        break;
+    case 2:
+        expand("notevars set Character/Discoveries XPRolledOver Yes");
+        expand("notevars set Character/Discoveries Progress 0");
+        expand("notevars set Character/Discoveries TrackImage " + trackImage);
+        if (xpType == 1) {
+            expand("notevars set Character/Discoveries XPRolledOver No");
+            expand("notevars set Character/Discoveries XPEarned 0");
+            expand("notevars set Character/Discoveries XPSpent 0");
+        }
+        break;
+    case 3:
+        expand("notevars set Character/Quests XPRolledOver Yes");
+        expand("notevars set Character/Quests Progress 0");
+        expand("notevars set Character/Quests TrackImage " + trackImage);
+        if (xpType == 1) {
+            expand("notevars set Character/Quests XPRolledOver No");
+            expand("notevars set Character/Quests XPEarned 0");
+            expand("notevars set Character/Quests XPSpent 0");
+        }
+        break;
+    default:
+        expand("notevars set Character/Bonds XPRolledOver Yes");
+        expand("notevars set Character/Bonds Progress 0");
+        expand("notevars set Character/Bonds TrackImage " + trackImage);
+        expand("notevars set Character/Discoveries XPRolledOver Yes");
+        expand("notevars set Character/Discoveries Progress 0");
+        expand("notevars set Character/Discoveries TrackImage " + trackImage);
+        expand("notevars set Character/Quests XPRolledOver Yes");
+        expand("notevars set Character/Quests Progress 0");
+        expand("notevars set Character/Quests TrackImage " + trackImage);
+        if (xpType == 1) {
+            expand("notevars set Character/Bonds XPEarned 0");
+            expand("notevars set Character/Discoveries XPEarned 0");
+            expand("notevars set Character/Quests XPEarned 0");
+            expand("notevars set Character/Bonds XPSpent 0");
+            expand("notevars set Character/Discoveries XPSpent 0");
+            expand("notevars set Character/Quests XPSpent 0");
+        }
+        break;
+}
+
+let callout = "> [!progress]- Legacies Reset\n> \n\n";
+
+return callout;
+```
+__
+resetlegacies - This resets all legacy tracks to 0.
 
 __
 ^endprogress ([_a-zA-Z0-9]*)

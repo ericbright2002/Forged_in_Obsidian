@@ -143,6 +143,7 @@ switch ($1.toUpperCase()) {
     case "FF":
         yesCeiling = 50;
         chances = "Fifty-Fifty";
+        break;
     case "U":
         yesCeiling = 25;
         chances = "Unlikely";
@@ -154,6 +155,7 @@ switch ($1.toUpperCase()) {
     default:
         yesCeiling = 50;
         chances = "Fifty-Fifty";
+        break;
 }
 var result = theRoll.toString();
 if (theRoll <= yesCeiling) {
