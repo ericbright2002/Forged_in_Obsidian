@@ -175,7 +175,7 @@ setprogress {note file name that contains the progress track} {# of ticks from 0
 
 
 __
-^markprogress ([_a-zA-Z0-9]*) ([+-][0-9]*)$
+^markprogress ([_a-zA-Z0-9]*) ([0-9]*)$
 __
 ```js
 let givenTrack = $1.toUpperCase();
@@ -247,6 +247,76 @@ return callout;
 ```
 __
 markprogress {note file name that contains the progress track} {times to mark progress} - The number of times to mark progress will typically be only 1 or 2 (unless a strong hit takes you to 3 or something).  You don't need to calculate the number of ticks to mark.  For example, on a Dangerous track if you want to mark progress once, just use the number 1.  It will calculate that one progress means 8 ticks (or two boxes) on its own.
+
+
+__
+^clearprogress ([_a-zA-Z0-9]*) ([0-9]+)$
+__
+```js
+let givenTrack = $1.toUpperCase();
+var trackTitle = "";
+switch (givenTrack) {
+    case "QUESTS":
+        trackTitle = "Character/Quests";
+        break;
+    case "BONDS":
+        trackTitle = "Character/Bonds";
+        break;
+    case "DISCOVERIES":
+        trackTitle = "Character/Discoveries";
+        break;
+    default:
+        trackTitle = "Progress/" + $1;
+        break;
+}
+var currentProgress = getVar(trackTitle, "Progress");
+let difficulty = getVar(trackTitle, "Difficulty");
+let ticksPerProgress = ticksPP(difficulty);
+let name = getVar(trackTitle, "Name");
+let progressToMark = $2;
+let ticksToAdd = Number(ticksPerProgress) * Number(progressToMark);
+currentProgress = currentProgress - ticksToAdd;
+
+var xpRolledOver = "No";
+if (currentProgress < 0) {
+    if (givenTrack == "QUESTS" || givenTrack == "BONDS" || givenTrack == "DISCOVERIES") {
+        xpRolledOver = getVar(trackTitle, "XPRolledOver");
+        if (xpRolledOver == "No") { 
+            currentProgress = 0;
+        } else {
+            currentProgress = currentProgress + 40;
+            xpRolledOver = "No";
+            expand("notevars set " + trackTitle + " XPRolledOver No");
+        }
+    } else {
+        currentProgress = 0;
+    }
+}
+let fullBoxes = Math.floor(currentProgress/4);
+
+expand("notevars set " + trackTitle + " Progress " + currentProgress);
+let trackImage = getTrackImage(currentProgress);
+expand("notevars set " + trackTitle + " TrackImage " + trackImage);
+
+var xpEarned = 0;
+if (givenTrack == "QUESTS" || givenTrack == "BONDS" || givenTrack == "DISCOVERIES") {
+    if (xpRolledOver == "Yes") {
+        xpEarned = fullBoxes + 20;
+    } else {
+        xpEarned = fullBoxes * 2;
+    }
+    expand("notevars set " + trackTitle + " XPEarned " + xpEarned);
+}
+
+var trueTrack = "![[" + trackImage.replace(/["]+/g , "").replace(/\[/g, "").replace(/\]/g, "") + "|350]]";
+
+
+let callout = "> [!progress]- " + name + ", " + progressToMark + " Progess Marked (Total: " + fullBoxes + " ![[progress-box-4.svg|15]])\n> File Name: [[" + trackTitle + "]], Difficulty: " + difficulty + "\n> " + progressToMark + " progress marked or " + ticksToAdd + " ticks for a total of " + fullBoxes + " full boxes or " + currentProgress + " ticks\n> \n> " + trueTrack + "\n> \n> Milestone: \n\n";
+
+return callout;
+```
+__
+clearprogress {note file name that contains the progress track} {TICKS to clear} - If the move says clear so many progress boxes, multiply the number of boxes by 4 to get the number of ticks to clear.  If the move says clear that many units of progress, you'll need to figure out how many ticks that is first.
 
 
 __
