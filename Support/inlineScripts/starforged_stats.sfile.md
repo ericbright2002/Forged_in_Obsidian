@@ -8,9 +8,9 @@ __
 
 __
 ```js
-function countImpacts() {
+function countImpacts(characterFile) {
     let impacts = ["Wounded", "Shaken", "Unprepared", "Harmed", "Traumatized", "Doomed", "Tormented", "Indebted"];
-    const file = app.vault.fileMap["Character/Conditions"] || app.vault.fileMap["Character/Conditions.md"];
+    const file = app.vault.fileMap["Characters/" + characterFile] || app.vault.fileMap["Characters/" + characterFile + ".md"];
     const cache = app.metadataCache.getFileCache(file);
     const fm = cache.frontmatter;
     var i = 0;
@@ -151,12 +151,31 @@ function getAssetFM(asset) {
 __
 
 __
-^toggle ([a-zA-Z]*)$
+
+__
+```js
+function getSoloCharacter() {
+    const file = app.vault.fileMap["Characters"];
+    return file.children[0].name.replace(".md", "");
+}
+```
+__
+
+__
+^toggleimpact ([a-zA-Z]*) ?([_a-zA-Z0-9]*)$
 __
 ```js
 var onOff = "";
-let capWord = $1.charAt(0).toUpperCase() + $1.slice(1).toLowerCase();
-let currentValue = getVar("Character/Conditions", capWord);
+var characterFile = "Character_File_Name_Here";
+if (!$2) {
+    characterFile = getSoloCharacter();
+} else {
+    characterFile = $2;
+}
+
+let impact = $1.charAt(0).toUpperCase() + $1.slice(1).toLowerCase();
+let currentValue = getVar("Characters/" + characterFile, impact);
+let characterName = getVar("Characters/" + characterFile, "Name");
 var newValue = "⬡";
 if (currentValue.contains("⬡")) {
     newValue = "⬢";
@@ -165,35 +184,51 @@ if (currentValue.contains("⬡")) {
     newValue = "⬡";
     onOff = "off. ⬡";
 }
-expand("notevars set Character/Conditions " + capWord + " " + newValue);
-return "> [!mechanics]- " + capWord + " set to " + onOff + "\n\n";
+expand("notevars set Characters/" + characterFile + " " + impact + " " + newValue);
+return "> [!mechanics]- " + characterName + " " + impact + " set to " + onOff + "\n\n";
 ```
 __
-toggle {condition name} - toggles a condition on/off using the full name of the condition except for "permanently harmed" which should be shortened to just "harmed"
+impact {impact name} {optional: Which character filename?} - For this to know which character stat to use, make sure to use the EXACT file name of the character in the Character folder which can include letters, numbers, and underscore. If left out, it defaults to the first file name in the Character folder.  Then this toggles a condition on/off using the full name of the condition except for "permanently harmed" which should be shortened to just "harmed".
 
 
 __
-^burnmom
+^burnmom ?([_a-zA-Z0-9]*)$
 __
 ```js
-let countedImpacts = countImpacts();
-if (countedImpacts > 1) {
-    expand("notevars set Character/Meters Momentum 0");
-} else if (countedImpacts == 1) {
-    expand("notevars set Character/Meters Momentum 1");
+var characterFile = "Character_File_Name_Here";
+if (!$1) {
+    characterFile = getSoloCharacter();
 } else {
-    expand("notevars set Character/Meters Momentum 2");
+    characterFile = $1;
 }
-return "> [!mechanics]+ You burned your momentum!\n> This changed the result to: [Add your result here]";
+let characterName = getVar("Characters/" + characterFile, "Name");
+let countedImpacts = countImpacts(characterFile);
+if (countedImpacts > 1) {
+    expand("notevars set Characters/" + characterFile + " Momentum 0");
+} else if (countedImpacts == 1) {
+    expand("notevars set Characters/" + characterFile + " Momentum 1");
+} else {
+    expand("notevars set Characters/" + characterFile + " Momentum 2");
+}
+
+return "> [!mechanics]+ " + characterName + " burned their momentum!\n> This changed the result to: \n\n";
 ```
 __
-burnmom - burns your momentum and resets
+burnmom {optional: Which character filename?} - For this to know which character stat to use, make sure to use the EXACT file name of the character in the Character folder which can include letters, numbers, and underscore. If left out, it defaults to the first file name in the Character folder.  Then this shortcut burns your momentum and resets it.
 
 __
-^gain ([_a-zA-Z]*) ([0-9])$
+^take ([0-9]*) ([_a-zA-Z]*) ?([_a-zA-Z0-9]*)$
 __
 ```js
-var name = $1.charAt(0).toUpperCase() + $1.slice(1).toLowerCase();
+var characterFile = "Character_File_Name_Here";
+if (!$3) {
+    characterFile = getSoloCharacter();
+} else {
+    characterFile = $3;
+}
+let characterName = getVar("Characters/" + characterFile, "Name");
+
+var name = $2.charAt(0).toUpperCase() + $2.slice(1).toLowerCase();
 var meter = "";
 if (name.contains("_")) {
     let nameArray = name.split("_");
@@ -205,21 +240,25 @@ if (name.contains("_")) {
         }
     }
 } else {
-    meter = $1.charAt(0).toUpperCase() + $1.slice(1).toLowerCase();
+    meter = $2.charAt(0).toUpperCase() + $2.slice(1).toLowerCase();
 }
-let gain = Number($2);
-var meterPath = "Character/Meters";
+let gain = Number($1);
+var meterPath = "Characters/" + characterFile;
 var max = 5;
-let countedImpacts = countImpacts();
+let countedImpacts = countImpacts(characterFile);
 switch (meter) {
     case "Health":
     case "Spirit":
     case "Supply":
     case "Wealth":
+    case "Edge":
+    case "Heart":
+    case "Iron":
+    case "Shadow":
+    case "Will":
         break;
     case "Momentum":
         max = 10 - countedImpacts;
-        meterPath = "Character/Meters";
         break;
     default:
         let fm = getAssetFM(meter);
@@ -235,17 +274,25 @@ if (newValue > Number(max)) {
     newValue = Number(max);
 }
 expand("notevars set " + meterPath + " " + name + " " + newValue);
-let callout = "> [!mechanics]- " + meter + " set to " + newValue + " out of " + max + ".\n\n";
+let callout = "> [!mechanics]- " + characterName + "'s " + meter + " set to " + newValue + " out of " + max + ".\n\n";
 return callout;
 ```
 __
-gain {meter name} {amount to add from 1-5} - adds to Health, Spirit, Supply, Wealth, or Momentum
+take {amount to add from 1-9} {meter, stat, or asset name} {optional: Which character filename?} - For this to know which character stat to use, make sure to use the EXACT file name of the character in the Character folder which can include letters, numbers, and underscore. If left out, it defaults to the first file name in the Character folder.  Then this shortcut adds to Health, Spirit, Supply, Wealth, Momentum, Edge, Heart, Iron, Shadow, Will, or asset which has a meter.  If you are using an asset meter, use the name of the asset file including any underscore.
 
 __
-^lose ([a-zA-Z]*) ([0-9]*)$
+^suffer ([0-9]*) ([_a-zA-Z]*) ?([_a-zA-Z0-9]*)$
 __
 ```js
-var name = $1.charAt(0).toUpperCase() + $1.slice(1).toLowerCase();
+var characterFile = "Character_File_Name_Here";
+if (!$3) {
+    characterFile = getSoloCharacter();
+} else {
+    characterFile = $3;
+}
+let characterName = getVar("Characters/" + characterFile, "Name");
+
+var name = $2.charAt(0).toUpperCase() + $2.slice(1).toLowerCase();
 var meter = "";
 if (name.contains("_")) {
     let nameArray = name.split("_");
@@ -257,23 +304,27 @@ if (name.contains("_")) {
         }
     }
 } else {
-    meter = $1.charAt(0).toUpperCase() + $1.slice(1).toLowerCase();
+    meter = $2.charAt(0).toUpperCase() + $2.slice(1).toLowerCase();
 }
-let loss = Number($2);
-var meterPath = "Character/Meters";
+let loss = Number($1);
+var meterPath = "Characters/" + characterFile;
 var min = 0;
 var max = 5;
-let countedImpacts = countImpacts();
+let countedImpacts = countImpacts(characterFile);
 switch (meter) {
     case "Health":
     case "Spirit":
     case "Supply":
     case "Wealth":
+    case "Edge":
+    case "Heart":
+    case "Iron":
+    case "Shadow":
+    case "Will":
         break;
     case "Momentum":
         min = -6;
         max = 10 - countedImpacts;
-        meterPath = "Character/Meters";
         break;
     default:
         let fm = getAssetFM(meter);
@@ -291,8 +342,8 @@ if (newValue < min) {
         text = " You had to lose more " + name + " than you had. " + leftover + " still to lose.";
 }
 expand("notevars set " + meterPath + " " + name + " " + newValue);
-let callout = "> [!mechanics]+ " + meter + " set to " + newValue + " out of " + max + ".\n> " + text + "\n\n";
+let callout = "> [!mechanics]+ " + characterName + "'s " + meter + " set to " + newValue + " out of " + max + ".\n> " + text + "\n\n";
 return callout;
 ```
 __
-lose {meter name} {amount to add from 1-5} - subtracts from Health, Spirit, Supply, Wealth, or Momentum
+suffer {amount to subtract from 1-9} {meter, stat, or asset name} {optional: Which character filename?} - For this to know which character stat to use, make sure to use the EXACT file name of the character in the Character folder which can include letters, numbers, and underscore. If left out, it defaults to the first file name in the Character folder.  Then this shortcut subtracts from Health, Spirit, Supply, Wealth, Momentum, Edge, Heart, Iron, Shadow, Will, or asset meter.  If you are using an asset meter, use the name of the asset file including any underscore.

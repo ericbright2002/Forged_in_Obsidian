@@ -54,6 +54,18 @@ function getVar(notePath, fmVar) {
 __
 
 __
+
+__
+```js
+function getSoloCharacter() {
+    const file = app.vault.fileMap["Characters"];
+    return file.children[0].name.replace(".md", "");
+}
+```
+__
+
+
+__
 ^getmovename ([a-zA-Z]*)$
 __
 ```js
@@ -235,38 +247,23 @@ let capName = splitStr.join(' ');
 return moveName;
 ```
 __
-getmovename {move initials} {return full description? 1 = Yes, 0 = No} - A helper function to get the full name of a move or the markdown of the full move.  IMPORTANT: Single word moves use the full word rather than the initials.
+getmovename {move initials} - A helper function to get the full name of a move or the markdown of the full move.  IMPORTANT: Single word moves use the full word rather than the initials.
 
 __
-^move ([a-zA-Z]*) ([a-zA-Z]*) ?([0-9]*)$
+^move ([a-zA-Z]*) ([a-zA-Z]*) ([0-9]*) ?([_a-zA-Z0-9]*)$
 __
 ```js
+var characterFile = "Character_File_Name_Here";
 let moveName = expand("getmovename " + $1);
-let statName = $2.charAt(0).toUpperCase() + $2.slice(1).toLowerCase(); // $2;
+let statName = $2.charAt(0).toUpperCase() + $2.slice(1).toLowerCase();
 var addValue = $3;
-if (!$3) {
-	addValue = 0;
+if (!$4) {
+	characterFile = getSoloCharacter();
+} else {
+    characterFile = $4;
 }
-var statOrMeter = "Stats ";
-switch (statName) {
-    case "Heart":
-    case "Iron":
-    case "Edge":
-    case "Wits":
-    case "Shadow":
-        statOrMeter = "Stats ";
-        break;
-    case "Health":
-    case "Spirit":
-    case "Supply":
-    case "Wealth":
-        statOrMeter = "Meters ";
-        break;
-    default:
-        statOrMeter = "Stats ";
-        break;
-}
-let statValue = expand("notevars get Character/" + statOrMeter + statName);
+
+let statValue = getVar("Characters/" + characterFile, statName);
 let d10A = Math.floor(Math.random() * 10) + 1;
 let d10B = Math.floor(Math.random() * 10) + 1;
 let d6 = Math.floor(Math.random() * 6) + 1;
@@ -297,8 +294,8 @@ if (actionRoll > d10A && actionRoll > d10B) {
         result = result + " with a MATCH!";
     }
 }
-
-let calloutTitle = calloutType + " " + moveName + ": " + statName + " + " + addValue;
+let characterName = getVar("Characters/" + characterFile, "Name");
+let calloutTitle = calloutType + " " + characterName + " " + moveName + ": " + statName + " + " + addValue;
 let actionResult = "\n> ![[d6-" + d6 + "-t.svg#invert_W|50]]![[plus-t.svg#invert_W|15]]![[stat-" + statValue + "-t.svg#invert_W|50]]![[plus-t.svg#invert_W|15]]![[add-" + addValue + "-t.svg#invert_W|50]]![[equals-t.svg#invert_W|15]]![[total-" + actionRoll + "-t.svg#invert_W|50]]";
 let challengeResult = "\n> ![[vs-t.svg#invert_W|50]]![[d10-" + d10A + "-t.svg#invert_W|50]]![[and-t.svg#invert_W|50]]![[d10-" + d10B + "-t.svg#invert_W|50]]";
 let outcome = "\n> ### Result: " + image + " " + result;
@@ -306,7 +303,7 @@ resultCallout = calloutTitle + actionResult + challengeResult + outcome + "\n\n"
 return resultCallout;
 ```
 __
-move {move initials} {stat} {add} - This will make a challenge roll using the provided stat and add amount on the move provided.  IMPORTANT: Single word moves use the full word rather than the initials.
+move {move initials} {stat} {add value} {optional: Which character filename?} - For this to know which character stat to use, make sure to use the EXACT file name of the character in the Character folder which can include letters, numbers, and underscore. If left out, it defaults to the first file name in the Character folder.  Then this shortcut will make a challenge roll using the provided stat and add amount on the move provided.  IMPORTANT: Single word moves use the full word rather than the initials. i.e. Use "Battle" instead of just "B".   
 
 __
 ^moveref ([a-zA-Z]*)$
