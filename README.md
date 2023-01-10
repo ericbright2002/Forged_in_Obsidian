@@ -6,7 +6,7 @@ I did a terrible job keeping track earlier, here are the files that you should c
 
 ### v1.5
 - Updated README.md
-- Updated starforged_moves.sfile.md, starforged_stats.sfile.md, starforged_progress.sfile.md in the Supper/inlineScripts folder
+- Updated starforged_moves.sfile.md, starforged_stats.sfile.md, starforged_progress.sfile.md, and starforged_oracles.sfile.md in the Supper/inlineScripts folder
 - Updated snippets.css in the .obsidian/snippets folder
 - Added Character_Template and Mech_Template files in the Templates folder
 - Optional: Updated data.json in the .obsidian/plugins/templater-obsidian folder to account for the new Character_Template file
