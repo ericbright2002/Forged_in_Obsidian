@@ -12,7 +12,7 @@ I did a terrible job keeping track earlier, here are the files that you should c
 - Optional: Updated data.json in the .obsidian/plugins/templater-obsidian folder to account for the new Character_Template file
 - Removed Vault_Info file from Support folder
 - Renamed Character folder to Characters
-- Removed Bonds, Discoveries, Quests, Stats, Meters, Conditions, and Character_Sheet from the Character folder
+- Removed Bonds, Discoveries, Quests, Stats, Meters, Conditions, and Character_Sheet from the Character folder (deprecated)
 - All player characters now have a single file for their character sheet and stats which should be created using the Character_Template
 
 
