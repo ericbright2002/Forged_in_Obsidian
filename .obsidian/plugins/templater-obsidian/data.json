@@ -17,6 +17,10 @@
     {
       "folder": "Progress",
       "template": "Templates/Progress_Template.md"
+    },
+    {
+      "folder": "Characters",
+      "template": "Templates/Character_Template.md"
     }
   ],
   "syntax_highlighting": true,
