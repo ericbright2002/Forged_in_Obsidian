@@ -136,20 +136,6 @@ function getSoloCharacter() {
 ```
 __
 
-__
-^test
-__
-```js
-let bProg = Number(getVar("Characters/Char2", "Bonds_Progress"));
-alert(bProg);
-let dProg = Number(getVar("Characters/Char2", "Discoveries_Progress"));
-alert(dProg);
-let qProg = Number(getVar("Characters/Char2", "Quests_Progress"));
-alert(qProg);
-return
-```
-__
-test - put it to the test
 
 __
 ^setprogress ([_a-zA-Z0-9]*) ([0-9]+) ?([_a-zA-Z0-9]*)$
