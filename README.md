@@ -2,17 +2,26 @@
 Welcome to my Starforged Starter Vault!  I set this up to play Starforged in a way that fits me best.
 
 ## Change Log
-I did a terrible job keeping track earlier, here are the files that you should change to get v1.5 working.
+I did a terrible job keeping track earlier, here are the files that you should change to get everything working to v1.5 and beyond.
+
+### v1.5.1
+* Updated <font color="red">README.md</font>
+* Updated <font color="red">starforged_progress.sfile.md</font> in the Support/inlineScripts folder
+- Updated <font color="red">snippets.css</font> in the .obsidian/snippets folder to get the icon for the new Clocks folder
+- Added the new <font color="red">Clocks folder</font> with Clocks1.md inside as a demo
+- Added <font color="red">Clocks_Template</font> to the Templates folder
+- Updated the <font color="red">data.json</font> file in .obsidian/plugins/templater-obsidian folder to account for the new Clocks_Template file
+- Added the <font color="red">ProgressClocks folder</font> to the Images/Shortcut_Images folder which has all the progress clock SVG files
 
 ### v1.5
 - Updated README.md
-- Updated starforged_moves.sfile.md, starforged_stats.sfile.md, starforged_progress.sfile.md, and starforged_oracles.sfile.md in the Supper/inlineScripts folder
+- Updated starforged_moves.sfile.md, starforged_stats.sfile.md, starforged_progress.sfile.md in the Support/inlineScripts folder
 - Updated snippets.css in the .obsidian/snippets folder
 - Added Character_Template and Mech_Template files in the Templates folder
 - Optional: Updated data.json in the .obsidian/plugins/templater-obsidian folder to account for the new Character_Template file
 - Removed Vault_Info file from Support folder
 - Renamed Character folder to Characters
-- Removed Bonds, Discoveries, Quests, Stats, Meters, Conditions, and Character_Sheet from the Character folder (deprecated)
+- Removed Bonds, Discoveries, Quests, Stats, Meters, Conditions, and Character_Sheet from the Character folder
 - All player characters now have a single file for their character sheet and stats which should be created using the Character_Template
 
 
@@ -103,37 +112,45 @@ While you are free to use any and all of the commands the Inline Scripts offers 
    
 11. <u>resetlegacies {optional: Which character filename?}</u> - Resets all legacies tracks and XP earned to 0 for the given character.
    
-12. <u>endprogress {fiilename} {optional: Which character filename?}</u> - Makes the progress move and Fulfill Your Vow or Take Decisive Action on an objective (for the given character if Bonds, Discoveries, or Quests).
+12. <u>endprogress {filename} {optional: Which character filename?}</u> - Makes the progress move and Fulfill Your Vow or Take Decisive Action on an objective (for the given character if Bonds, Discoveries, or Quests).
    
-13. <u>oracle {question}</u> - Ask a question and then select the oracle to roll from the popup menu.
+13. <u>createclock</u> - Create a progress clock with popups.
 
-14. <u>yesno {odds} {question}</u> - Ask the oracle a yes/no question with the given odds.
+14. <u>advanceclock {filename} {optional: # of times}</u> - Advances the given clock the given number of times which defaults to filling one segment.
 
-15. <u>at {question}</u> - Ask a question and get an Action/Theme result as an answer.
+15. <u>setclock {filename} {segments to fill}</u> - Takes an already existing clock and sets it to the given value.
 
-16. <u>df {question}</u> - Ask a question and get a Descriptor/Focus result as an answer.
+16. <u>endclock {filename}</u> - Marks the given clock as complete.
 
-17. <u>ptp</u> - Rolls on the oracle from the Pay the Price move.
+17. <u>oracle {question}</u> - Ask a question and then select the oracle to roll from the popup menu.
 
-18. <u>character</u> - Rolls a full NPC with all the character oracles.
+18. <u>yesno {odds} {question}</u> - Ask the oracle a yes/no question with the given odds.
 
-19. <u>faction</u> - Rolls a full faction with all the faction oracles.
+19. <u>at {question}</u> - Ask a question and get an Action/Theme result as an answer.
 
-20. <u>sector</u> - Rolls a full sector including planets and settlements.
+20. <u>df {question}</u> - Ask a question and get a Descriptor/Focus result as an answer.
 
-21. <u>settlement</u> - Rolls a full settlement using the settlement oracles.
+21. <u>ptp</u> - Rolls on the oracle from the Pay the Price move.
 
-22. <u>starship {region}</u> - Rolls a full starship using the starship oracles in the given region.
+22. <u>character</u> - Rolls a full NPC with all the character oracles.
 
-23. <u>creature {environment}</u> - Rolls a full creature using the creature oracles of the given environment.
+23. <u>faction</u> - Rolls a full faction with all the faction oracles.
 
-24. <u>planet {class} {region}</u> - Rolls a full planet of the given class in the given region.
+24. <u>sector</u> - Rolls a full sector including planets and settlements.
 
-25. <u>derelict</u> - Rolls what you initially see at a derelict.
+25. <u>settlement</u> - Rolls a full settlement using the settlement oracles.
 
-26. <u>vault</u> - Rolls what you initially see at a precursor vault.
+26. <u>starship {region}</u> - Rolls a full starship using the starship oracles in the given region.
 
-27. <u>mech</u> - Adds a generic blue "Mechanics" box if there are some other random game mechanics that you want separated from the fiction.
+27. <u>creature {environment}</u> - Rolls a full creature using the creature oracles of the given environment.
+
+28. <u>planet {class} {region}</u> - Rolls a full planet of the given class in the given region.
+
+29. <u>derelict</u> - Rolls what you initially see at a derelict.
+
+30. <u>vault</u> - Rolls what you initially see at a precursor vault.
+
+31. <u>mech</u> - Adds a generic blue "Mechanics" box if there are some other random game mechanics that you want separated from the fiction.
 
 ### Details of Individual Commands
 
@@ -202,8 +219,28 @@ While you are free to use any and all of the commands the Inline Scripts offers 
 	  <hr>
 	* **endprogress {either the filename that contains the progress track or use the one-word references of Bonds, Discoveries, or Quests} {optional: Which character filename?}:** This command makes the final progress move to Fulfill Your Vow or Take Decisive Action on an objective and it marks the file as a completed vow.
 	  
-	  <u>Example use:</u> `;;endprogress PirateFight1` will roll the challenge dice and compare them to your current progress.
-
+	  <u>Example use:</u> `;;endprogress PirateFight1` will roll the challenge dice and compare them to your current progress.  
+	  
+	  <hr>
+	* **createclock:** This command creates a new file in the Clocks fiolder to track a progress clock.  Popup menus allow you to set the filename (like "Clock1"), a name for clock (like "Incoming Storm"), and how many total segments the clock should have (4, 6, 8, or 10).
+	  
+	  <u>Example use:</u> `;;createclock` will create a new progress clock
+	  
+	  <hr>
+	* **advanceclock {filename} {optional: # of segments to fill}:** This command advances the clock stored in the given filename the given number of segments.  If not segments are given, it defaults to advancing the clock one pie wedge.
+	  
+	  <u>Example use:</u> `;;advanceclock Clock3` will advance the clock in the file Clock3 once. Alternately, you could say `;;advanceclock Clock3 2` to advance the clock twice (fill two pie wedges).
+	  
+	  <hr>
+	* **setclock {filename} {number of filled wedges}:** This command sets the clock stored in the given filename to the given number of filled wedges.
+	  
+	  <u>Example use:</u> `;;setclock Clock3 7` will set the progress clock to have seven segements filled.  If this is more than the maximum number of wedges you can have filled, it will set it to the max.
+	  
+	  <hr>
+	* **endclock {filename}:** This command marks the progress clock stored in the given filename as complete.  You can then add details as to what exactly this means in the callout box that is created.
+	  
+	  <u>Example use:</u> `;;endclock Clock3` will mark the progress clock stored in Clock3 as complete and then give you a callout box for you to add more details as to what the consequences of that are.
+	  	  
 4. **starforged_oracles.sfile:** This file contains all the shortcuts for rolling oracles.
 	* **getoracle {file path}:** This is a helper function that you don't ever need to use.  It is used by the other commands but needed to be an actual shortcut rather than a true JS function.  The specific purpose of this function is to check for Action/Theme, Descriptor/Focus, or Roll Twice results and then substitute those new oracle results in.
 	  
