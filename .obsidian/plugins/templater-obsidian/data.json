@@ -21,6 +21,10 @@
     {
       "folder": "Characters",
       "template": "Templates/Character_Template.md"
+    },
+    {
+      "folder": "Clocks",
+      "template": "Templates/Clocks_Template.md"
     }
   ],
   "syntax_highlighting": true,
