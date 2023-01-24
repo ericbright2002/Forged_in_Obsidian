@@ -476,3 +476,120 @@ return callout;
 ```
 __
 createprogress - Creates a new file with the Progress Template in the Progress folder and set the filename, vow name, and difficulty through popups.
+
+__
+^createclock
+__
+```js
+let options = [4, 6, 8, 10];
+var fileName = popups.input("What is the filename of the file to create?", "Clock1");
+_inlineScripts.inlineScripts.HelperFncs.fileWrite("Clocks/" + fileName + ".md", "");
+var name = popups.input("What is the name of the clock?", "Incoming storm");
+var segments = popups.pick("How many segments should the clock have?", options, 1);
+expand("notevars set Clocks/" + fileName + " Name " + name);
+expand("notevars set Clocks/" + fileName + " Segments " + options[segments]);
+let internalLink = "[[Clocks/" + fileName + "|" + fileName + "]]";
+let callout = "> [!progress]- New Progress Clock Created: " + internalLink + ", Total: 0 ![[progress-clock-" + options[segments] + "-0.svg|15]]\n> **Name:** " + name + "\n> **Segments:** " + options[segments] + "\n>![[progress-clock-" + options[segments] + "-0.svg|100]]\n> **Additional Details:** \n\n"
+return callout;
+```
+__
+createclock - Creates a new file with the Clock Template in the Clocks folder and set the filename, clock name, and # of segments through popups.
+
+__
+^advanceclock ([_a-zA-Z0-9]*) ?([0-9]*)$
+__
+```js
+let clockFile = "Clocks/" + $1;
+var segmentsToFill = Number($2);
+if (!$2) {
+    segmentsToFill = 1;
+}
+var name = getVar(clockFile, "Name");
+var currentProgress = getVar(clockFile, "Progress");
+var maxSegments = getVar(clockFile, "Segments");
+var extra = "";
+
+currentProgress = currentProgress + segmentsToFill;
+if (currentProgress > maxSegments) {
+    currentProgress = maxSegments;
+}
+
+expand("notevars set " + clockFile + " Progress " + currentProgress);
+
+let clockImage = "![[progress-clock-" + maxSegments + "-" + currentProgress + ".svg|100]]";
+let saveImage = "\"[[progress-clock-" + maxSegments + "-" + currentProgress + ".svg]]\"";
+expand("notevars set " + clockFile + " ClockImage " + saveImage);
+
+let tag = "complete";
+if (currentProgress == maxSegments) {
+    extra = "\n> \n>CLOCK IS FULL!";
+    expand("notevars set " + clockFile + " tags " + tag);
+}
+
+let callout = "> [!progress]- " + name + " clock advanced\n> File Name: [[" + $1 + "]]\n>**Progress:** " + currentProgress + " out of " + maxSegments + " segments filled\n>" + clockImage + "\n> \n> **Cause of Advance:**" + extra + "\n\n";
+
+return callout;
+```
+__
+advanceclock {filename that contains the clock} {optional: times to advance the clock} - Give the filename where the clock is at and optionally how many segments you want to fill.
+
+__
+^setclock ([_a-zA-Z0-9]*) ([0-9]*)$
+__
+```js
+let clockFile = "Clocks/" + $1;
+var segmentsToFill = Number($2);
+
+var name = getVar(clockFile, "Name");
+var maxSegments = getVar(clockFile, "Segments");
+var extra = "";
+
+if (segmentsToFill > maxSegments) {
+    segmentsToFill = maxSegments;
+}
+if (segmentsToFill < 0) {
+    segmentsToFill = 0;
+}
+
+expand("notevars set " + clockFile + " Progress " + segmentsToFill);
+
+let clockImage = "![[progress-clock-" + maxSegments + "-" + segmentsToFill + ".svg|100]]";
+let saveImage = "\"[[progress-clock-" + maxSegments + "-" + segmentsToFill + ".svg]]\"";
+expand("notevars set " + clockFile + " ClockImage " + saveImage);
+
+var tag = "complete";
+if (segmentsToFill == maxSegments) {
+    extra = "\n> \n>CLOCK IS FULL!";
+} else {
+    tag = "incomplete"
+}
+expand("notevars set " + clockFile + " tags " + tag);
+
+let callout = "> [!progress]- " + name + " clock set to " + segmentsToFill + "\n> File Name: [[" + $1 + "]]\n>**Progress:** " + segmentsToFill + " out of " + maxSegments + " segments filled\n>" + clockImage + "\n> \n> **Additional Details:**" + extra + "\n\n";
+
+return callout;
+```
+__
+setclock {filename that contains the clock} {segments to set as filled} - Give the filename where the clock is at and tell how many segments you want to be set as filled.
+
+__
+^endclock ([_a-zA-Z0-9]*)$
+__
+```js
+let clockFile = "Clocks/" + $1;
+
+var name = getVar(clockFile, "Name");
+var maxSegments = getVar(clockFile, "Segments");
+var progress = getVar(clockFile, "Progress");
+
+let clockImage = "![[progress-clock-" + maxSegments + "-" + progress + ".svg|100]]";
+
+var tag = "complete";
+expand("notevars set " + clockFile + " tags " + tag);
+
+let callout = "> [!progress]- " + name + " clock has ended with " + progress + " segments filled\n> File Name: [[" + $1 + "]]\n>**Progress:** " + progress + " out of " + maxSegments + " segments filled\n>" + clockImage + "\n> \n> **Additional Details:** \n\n";
+
+return callout;
+```
+__
+endclock {filename that contains the clock} - Give the filename where the clock is at and fill in what happens now that the clock has ended (i.e. Shelter is reached before the storm hit, or The death star construction has been completed.)
