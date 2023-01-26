@@ -488,6 +488,8 @@ var name = popups.input("What is the name of the clock?", "Incoming storm");
 var segments = popups.pick("How many segments should the clock have?", options, 1);
 expand("notevars set Clocks/" + fileName + " Name " + name);
 expand("notevars set Clocks/" + fileName + " Segments " + options[segments]);
+let saveImage = "\"[[progress-clock-" + options[segments] + "-0.svg]]\"";
+expand("notevars set Clocks/" + fileName + " ClockImage " + saveImage);
 let internalLink = "[[Clocks/" + fileName + "|" + fileName + "]]";
 let callout = "> [!progress]- New Progress Clock Created: " + internalLink + ", Total: 0 ![[progress-clock-" + options[segments] + "-0.svg|15]]\n> **Name:** " + name + "\n> **Segments:** " + options[segments] + "\n>![[progress-clock-" + options[segments] + "-0.svg|100]]\n> **Additional Details:** \n\n"
 return callout;
