@@ -4,6 +4,10 @@ Welcome to my Starforged Starter Vault!  I set this up to play Starforged in a w
 ## Change Log
 I did a terrible job keeping track earlier, here are the files that you should change to get everything working to v1.5 and beyond.
 
+### v1.5.2
+* Updated README.md
+* Updated <font color="red">starforged_progress.sfile.md</font>, <font color="red">starforged_stats.sfile.md</font>, and <font color="red">starforged_moves.sfile.md</font> in Support/inline Scripts folder which fixed Withstand Damage, fixed a bug of 0 values in frontmatter returning NULL instead of 0, altered Burn Momentum to give max and reset value on return, and added in new shortcuts of Stat Check, Auto Strong Hit, Auto Weak Hit, and Auto Miss.
+
 ### v1.5.1
 * Updated <font color="red">README.md</font>
 * Updated <font color="red">starforged_progress.sfile.md</font> in the Support/inlineScripts folder
