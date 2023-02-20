@@ -5,8 +5,9 @@ Welcome to my Starforged Starter Vault!  I set this up to play Starforged in a w
 I did a terrible job keeping track earlier, here are the files that you should change to get everything working to v1.5 and beyond.
 
 ### v1.5.2
-* Updated README.md
+* Updated <font color="red">README.md</font>
 * Updated <font color="red">starforged_progress.sfile.md</font>, <font color="red">starforged_stats.sfile.md</font>, and <font color="red">starforged_moves.sfile.md</font> in Support/inline Scripts folder which fixed Withstand Damage, fixed a bug of 0 values in frontmatter returning NULL instead of 0, altered Burn Momentum to give max and reset value on return, and added in new shortcuts of Stat Check, Auto Strong Hit, Auto Weak Hit, Auto Miss, and Roll for generic die rolls like 1d100 or 3d6.  See documented shortcuts below.
+* <b>Note:</b> For <u>Withstand Damage</u> on your command vehicle or when suffer/take integrity for your command vehicle, you can refer to the asset as "<font color="orange">cv</font>" instead of "Starship" if you want.
 
 ### v1.5.1
 * Updated <font color="red">README.md</font>
@@ -98,11 +99,11 @@ While you are free to use any and all of the commands the Inline Scripts offers 
    
 2. <u>burnmom  {optional: Which character file?}</u> - Burns and resets momentum for the given character.
    
-3. <u>take {amount} {meter/stat/asset} {optional: Which character filename?}</u> - Adds to given meter, stat, or asset track for the given character.
+3. <u>take {amount} {meter/stat/asset} {optional: Which character filename?}</u> - Adds to given meter, stat, or asset track for the given character.  If you are taking for the command vehicle integrity, you can either type "cv" or "Starship" as the asset name.
    
-4. <u>suffer {amount} {meter/stat/asset} {optional: Which character filename?}</u> - Subtracts from given meter or asset track for the given character.
+4. <u>suffer {amount} {meter/stat/asset} {optional: Which character filename?}</u> - Subtracts from given meter or asset track for the given character.  If you are suffering from the command vehicle integrity, you can either type "cv" or "Starship" as the asset name.
    
-5. <u>move {initials} {stat/asset name} {add} {optional: Which character filename?}</u> - Makes a challenge roll using the given stat or asset meter and add for the specified move for the given character.
+5. <u>move {initials} {stat/asset name} {add} {optional: Which character filename?}</u> - Makes a challenge roll using the given stat or asset meter and add for the specified move for the given character.  If you are using <u>Withstand Damage</u> for the command vehicle and thus rolling +integrity, you can either type "cv" or "Starship" as the asset name.
    
 6. <u>moveref {initals}</u> - Embed the text of a move.
    
