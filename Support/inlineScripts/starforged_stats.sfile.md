@@ -162,7 +162,7 @@ function getSoloCharacter() {
 __
 
 __
-^toggleimpact ([a-zA-Z]*) ?([_a-zA-Z0-9]*)$
+^impact ([a-zA-Z]*) ?([_a-zA-Z0-9]*)$
 __
 ```js
 var onOff = "";
@@ -203,15 +203,21 @@ if (!$1) {
 }
 let characterName = getVar("Characters/" + characterFile, "Name");
 let countedImpacts = countImpacts(characterFile);
+var momReset = 2;
+var momMax = 10;
 if (countedImpacts > 1) {
     expand("notevars set Characters/" + characterFile + " Momentum 0");
+    momReset = 0;
+    momMax = 10 - countedImpacts;
 } else if (countedImpacts == 1) {
     expand("notevars set Characters/" + characterFile + " Momentum 1");
+    momReset = 1;
+    momMax = 9;
 } else {
     expand("notevars set Characters/" + characterFile + " Momentum 2");
 }
 
-return "> [!mechanics]+ " + characterName + " burned their momentum!\n> This changed the result to: \n\n";
+return "> [!mechanics]+ " + characterName + " burned their momentum!\n> This changed the result to: \n> \n> Momentum Max: " + momMax + "\n> Momentum Reset: " + momReset + "\n\n";
 ```
 __
 burnmom {optional: Which character filename?} - For this to know which character stat to use, make sure to use the EXACT file name of the character in the Character folder which can include letters, numbers, and underscore. If left out, it defaults to the first file name in the Character folder.  Then this shortcut burns your momentum and resets it.
@@ -242,6 +248,7 @@ if (name.contains("_")) {
 } else {
     meter = $2.charAt(0).toUpperCase() + $2.slice(1).toLowerCase();
 }
+if (meter == "Cv") { meter = "Starship"; }
 let gain = Number($1);
 var meterPath = "Characters/" + characterFile;
 var max = 5;
@@ -269,6 +276,7 @@ switch (meter) {
 }
 
 let current = getVar(meterPath, name);
+if (!current) { current = 0; }
 var newValue = Number(current) + gain;
 if (newValue > Number(max)) {
     newValue = Number(max);
@@ -306,6 +314,7 @@ if (name.contains("_")) {
 } else {
     meter = $2.charAt(0).toUpperCase() + $2.slice(1).toLowerCase();
 }
+if (meter == "Cv") { meter = "Starship"; }
 let loss = Number($1);
 var meterPath = "Characters/" + characterFile;
 var min = 0;
@@ -334,6 +343,7 @@ switch (meter) {
         break;
 }
 let current = getVar(meterPath, name);
+if (!current) { current = 0; }
 var newValue = Number(current) - loss;
 var text = "";
 var leftover = min - newValue;
@@ -347,3 +357,39 @@ return callout;
 ```
 __
 suffer {amount to subtract from 1-9} {meter, stat, or asset name} {optional: Which character filename?} - For this to know which character stat to use, make sure to use the EXACT file name of the character in the Character folder which can include letters, numbers, and underscore. If left out, it defaults to the first file name in the Character folder.  Then this shortcut subtracts from Health, Spirit, Supply, Wealth, Momentum, Edge, Heart, Iron, Shadow, Will, or asset meter.  If you are using an asset meter, use the name of the asset file including any underscore.
+
+__
+^stats ?([_a-zA-Z0-9]*)$
+__
+```js
+var characterFile = "Character_File_Name_Here";
+if (!$1) {
+	characterFile = getSoloCharacter();
+} else {
+    characterFile = $1;
+}
+var health = getVar("Characters/" + characterFile, "Health");
+if (!health) { health = 0; }
+var spirit = getVar("Characters/" + characterFile, "Spirit");
+if (!spirit) { spirit = 0; }
+var supply = getVar("Characters/" + characterFile, "Supply");
+if (!supply) { supply = 0; }
+var wealth = getVar("Characters/" + characterFile, "Wealth");
+if (!wealth) { wealth = 0; }
+var momentum = getVar("Characters/" + characterFile, "Momentum");
+if (!momentum) { momentum = 0; }
+var edge = getVar("Characters/" + characterFile, "Edge");
+if (!edge) { edge = 0; }
+var heart = getVar("Characters/" + characterFile, "Heart");
+if (!heart) { heart = 0; }
+var iron = getVar("Characters/" + characterFile, "Iron");
+if (!iron) { iron = 0; }
+var shadow = getVar("Characters/" + characterFile, "Shadow");
+if (!shadow) { shadow = 0; }
+var wits = getVar("Characters/" + characterFile, "Wits");
+if (!wits) { wits = 0; }
+var callout = "> [!mechanics]+ Stat check!" + "\n> Edge: " + edge + "   Heart: " + heart + "   Iron: " + iron + "   Shadow: " + shadow + "   Wits: " + wits + "\n>   Health: " + health + "   Spirit: " + spirit + "   Supply: " + supply + "   Momentum: " + momentum + "   Wealth: " + wealth + "\n\n";
+return callout;
+```
+__
+stats {optional: Which character file?} - For this to know which character stat to use, make sure to use the EXACT file name of the character in the Character folder which can include letters, numbers, and underscore. If left out, it defaults to the first file name in the Character folder.  Then this shortcut will give that character's current stat and meter values.

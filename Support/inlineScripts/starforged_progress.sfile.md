@@ -250,6 +250,7 @@ switch (givenTrack) {
 }
 
 var currentProgress = getVar(trackTitle, progVar);
+if (!currentProgress) { currentProgress = 0; }
 let ticksPerProgress = ticksPP(difficulty);
 let progressToMark = $2;
 let ticksToAdd = Number(ticksPerProgress) * Number(progressToMark);
@@ -327,6 +328,7 @@ switch (givenTrack) {
 }
 
 var currentProgress = getVar(trackTitle, progVar);
+if (!currentProgress) { currentProgress = 0; }
 let ticksToClear = $2;
 currentProgress = currentProgress - ticksToClear;
 if (currentProgress < 0) { currentProgress = 0; }
@@ -424,6 +426,7 @@ switch (givenTrack) {
 }
 
 let currentProgress = getVar(trackTitle, progVar);
+if (!currentProgress) { currentProgress = 0; }
 let d10A = Math.floor(Math.random() * 10) + 1;
 let d10B = Math.floor(Math.random() * 10) + 1;
 var actionRoll = Math.floor(currentProgress/4);
@@ -508,6 +511,7 @@ if (!$2) {
 }
 var name = getVar(clockFile, "Name");
 var currentProgress = getVar(clockFile, "Progress");
+if (!currentProgress) { currentProgress = 0; }
 var maxSegments = getVar(clockFile, "Segments");
 var extra = "";
 
@@ -583,6 +587,7 @@ let clockFile = "Clocks/" + $1;
 var name = getVar(clockFile, "Name");
 var maxSegments = getVar(clockFile, "Segments");
 var progress = getVar(clockFile, "Progress");
+if (!progress) { progress = 0; }
 
 let clockImage = "![[progress-clock-" + maxSegments + "-" + progress + ".svg|100]]";
 
