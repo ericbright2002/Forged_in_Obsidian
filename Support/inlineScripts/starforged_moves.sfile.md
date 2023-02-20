@@ -414,7 +414,7 @@ resultCallout = calloutTitle + actionResult + challengeResult + outcome + "\n\n"
 return resultCallout;
 ```
 __
-move {move initials} {stat} {add value} {optional: Which character filename?} - For this to know which character stat to use, make sure to use the EXACT file name of the character in the Character folder which can include letters, numbers, and underscore. If left out, it defaults to the first file name in the Character folder.  Then this shortcut will make a challenge roll using the provided stat and add amount on the move provided.  IMPORTANT: Single word moves use the full word rather than the initials. i.e. Use "Battle" instead of just "B".   
+move {move initials} {stat/asset name} {add value} {optional: Which character filename?} - For this to know which character stat to use, make sure to use the EXACT file name of the character in the Character folder which can include letters, numbers, and underscore. If left out, it defaults to the first file name in the Character folder.  Then this shortcut will make a challenge roll using the provided stat or asset name (if rolling +integrity for example) and add amount on the move provided.  IMPORTANT: Single word moves use the full word rather than the initials. i.e. Use "Battle" instead of just "B".   
 
 __
 ^sh ([a-zA-Z]*) ?([_a-zA-Z0-9]*)$
