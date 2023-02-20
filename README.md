@@ -6,7 +6,7 @@ I did a terrible job keeping track earlier, here are the files that you should c
 
 ### v1.5.2
 * Updated README.md
-* Updated <font color="red">starforged_progress.sfile.md</font>, <font color="red">starforged_stats.sfile.md</font>, and <font color="red">starforged_moves.sfile.md</font> in Support/inline Scripts folder which fixed Withstand Damage, fixed a bug of 0 values in frontmatter returning NULL instead of 0, altered Burn Momentum to give max and reset value on return, and added in new shortcuts of Stat Check, Auto Strong Hit, Auto Weak Hit, and Auto Miss.
+* Updated <font color="red">starforged_progress.sfile.md</font>, <font color="red">starforged_stats.sfile.md</font>, and <font color="red">starforged_moves.sfile.md</font> in Support/inline Scripts folder which fixed Withstand Damage, fixed a bug of 0 values in frontmatter returning NULL instead of 0, altered Burn Momentum to give max and reset value on return, and added in new shortcuts of Stat Check, Auto Strong Hit, Auto Weak Hit, Auto Miss, and Roll for generic die rolls like 1d100 or 3d6.  See documented shortcuts below.
 
 ### v1.5.1
 * Updated <font color="red">README.md</font>
@@ -102,7 +102,7 @@ While you are free to use any and all of the commands the Inline Scripts offers 
    
 4. <u>suffer {amount} {meter/stat/asset} {optional: Which character filename?}</u> - Subtracts from given meter or asset track for the given character.
    
-5. <u>move {initials} {stat} {add} {optional: Which character filename?}</u> - Makes a challenge roll using the given stat and add for the specified move for the given character.
+5. <u>move {initials} {stat/asset name} {add} {optional: Which character filename?}</u> - Makes a challenge roll using the given stat or asset meter and add for the specified move for the given character.
    
 6. <u>moveref {initals}</u> - Embed the text of a move.
    
@@ -155,6 +155,16 @@ While you are free to use any and all of the commands the Inline Scripts offers 
 30. <u>vault</u> - Rolls what you initially see at a precursor vault.
 
 31. <u>mech</u> - Adds a generic blue "Mechanics" box if there are some other random game mechanics that you want separated from the fiction.
+
+32. <u>sh {move initials} {optional: character file name}</u> - returns an automatic strong hit for the given move and character.  Giving no character file name defaults to the first character in the Characters folder.
+
+33. <u>wh {move initials} {optional: character file name}</u> - returns an automatic weak hit for the given move and character.  Giving no character file name defaults to the first character in the Characters folder.
+
+34. <u>miss {move initials} {optional: character file name}</u> - returns an automatic miss for the given move and character.  Giving no character file name defaults to the first character in the Characters folder.
+
+35. <u>stats {optional: character file name}</u> - returns all the meter and stat values of the given character.  Giving no character file name defaults to the first character in the Characters folder.
+
+36. <u>roll {amount of dice}d{# of sides}</u> - a generic dice roller that returns the sum of the dice rolled in the heading and the individual rolls in the body of the callout box.
 
 ### Details of Individual Commands
 
