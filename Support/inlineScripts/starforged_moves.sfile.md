@@ -132,7 +132,12 @@ __
 ```js
 function getSoloCharacter() {
     const file = app.vault.fileMap["Characters"];
-    return file.children[0].name.replace(".md", "");
+    var charNames = [];
+    for (let i = 0; i < file.children.length; i = i + 1) {
+        charNames.push(file.children[i].name.replace(".md", ""));
+        charNames.sort();
+    }
+    return charNames[0];
 }
 ```
 __
@@ -323,7 +328,7 @@ __
 getmovename {move initials} - A helper function to get the full name of a move or the markdown of the full move.  IMPORTANT: Single word moves use the full word rather than the initials.
 
 __
-^move ([a-zA-Z]*) ([a-zA-Z]*) ([0-9]*) ?([_a-zA-Z0-9]*)$
+^move ([a-zA-Z]*) ([_a-zA-Z]*) ([0-9]*) ?([_a-zA-Z0-9]*)$
 __
 ```js
 var characterFile = "Character_File_Name_Here";
@@ -531,3 +536,18 @@ return calloutType + interior;
 ```
 __
 roll {# of dice}d{# of sides on the dice} - This rolls the given dice and returns the sum in the header and individual results inside the callout.
+
+__
+^1c
+__
+```js
+const file = app.vault.fileMap["Characters"];
+var charNames = [];
+for (let i = 0; i < file.children.length; i = i + 1) {
+    charNames.push(file.children[i].name.replace(".md", ""));
+    charNames.sort();
+}
+return charNames[0];
+```
+__
+1c - get 1st char name
