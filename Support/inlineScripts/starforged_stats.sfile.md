@@ -267,7 +267,7 @@ switch (meter) {
     case "Heart":
     case "Iron":
     case "Shadow":
-    case "Will":
+    case "Wits":
         break;
     case "Momentum":
         max = 10 - countedImpacts;
@@ -291,7 +291,7 @@ let callout = "> [!mechanics]- " + characterName + "'s " + meter + " set to " + 
 return callout;
 ```
 __
-take {amount to add from 1-9} {meter, stat, or asset name} {optional: Which character filename?} - For this to know which character stat to use, make sure to use the EXACT file name of the character in the Character folder which can include letters, numbers, and underscore. If left out, it defaults to the first file name in the Character folder.  Then this shortcut adds to Health, Spirit, Supply, Wealth, Momentum, Edge, Heart, Iron, Shadow, Will, or asset which has a meter.  If you are using an asset meter, use the name of the asset file including any underscore.
+take {amount to add from 1-9} {meter, stat, or asset name} {optional: Which character filename?} - For this to know which character stat to use, make sure to use the EXACT file name of the character in the Character folder which can include letters, numbers, and underscore. If left out, it defaults to the first file name in the Character folder.  Then this shortcut adds to Health, Spirit, Supply, Wealth, Momentum, Edge, Heart, Iron, Shadow, Wits, or asset which has a meter.  If you are using an asset meter, use the name of the asset file including any underscore.
 
 __
 ^suffer ([0-9]*) ([_a-zA-Z]*) ?([_a-zA-Z0-9]*)$
@@ -334,7 +334,7 @@ switch (meter) {
     case "Heart":
     case "Iron":
     case "Shadow":
-    case "Will":
+    case "Wits":
         break;
     case "Momentum":
         min = -6;
@@ -361,7 +361,7 @@ let callout = "> [!mechanics]+ " + characterName + "'s " + meter + " set to " + 
 return callout;
 ```
 __
-suffer {amount to subtract from 1-9} {meter, stat, or asset name} {optional: Which character filename?} - For this to know which character stat to use, make sure to use the EXACT file name of the character in the Character folder which can include letters, numbers, and underscore. If left out, it defaults to the first file name in the Character folder.  Then this shortcut subtracts from Health, Spirit, Supply, Wealth, Momentum, Edge, Heart, Iron, Shadow, Will, or asset meter.  If you are using an asset meter, use the name of the asset file including any underscore.
+suffer {amount to subtract from 1-9} {meter, stat, or asset name} {optional: Which character filename?} - For this to know which character stat to use, make sure to use the EXACT file name of the character in the Character folder which can include letters, numbers, and underscore. If left out, it defaults to the first file name in the Character folder.  Then this shortcut subtracts from Health, Spirit, Supply, Wealth, Momentum, Edge, Heart, Iron, Shadow, Wits, or asset meter.  If you are using an asset meter, use the name of the asset file including any underscore.
 
 __
 ^stats ?([_a-zA-Z0-9]*)$
