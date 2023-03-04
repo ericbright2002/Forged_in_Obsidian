@@ -308,7 +308,7 @@ var trackImageVar = "TrackImage";
 var progMax = 40;
 var characterFile = "Character_File_Name_Here";
 var characterName = "Character_Name_Here";
-
+var difficulty = "Epic";
 switch (givenTrack) {
     case "Quests":
     case "Bonds":
