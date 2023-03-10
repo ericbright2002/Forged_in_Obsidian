@@ -97,17 +97,25 @@ function getAssetFM(asset) {
             if (!file3) {
                 notePath = "Assets/Module/" + asset;
                 const file4 = app.vault.fileMap[notePath] || app.vault.fileMap[notePath + ".md"];
-                    if (!file4) {
-                        notePath = "Assets/Path/" + asset;
-                        const file5 = app.vault.fileMap[notePath] || app.vault.fileMap[notePath + ".md"];
-                        if (!file5) {
-                            notePath = "Assets/Support_Vehicle/" + asset;
-                            const file6 = app.vault.fileMap[notePath] || app.vault.fileMap[notePath + ".md"];
-                            if (!file6) {
-                                notePath = "No path";
+                if (!file4) {
+                    notePath = "Assets/Path/" + asset;
+                    const file5 = app.vault.fileMap[notePath] || app.vault.fileMap[notePath + ".md"];
+                    if (!file5) {
+                        notePath = "Assets/Support_Vehicle/" + asset;
+                        const file6 = app.vault.fileMap[notePath] || app.vault.fileMap[notePath + ".md"];
+                        if (!file6) {
+                            notePath = "Assets/Mech/" + asset;
+                            const file7 = app.vault.fileMap[notePath] || app.vault.fileMap[notePath + ".md"];
+                            if (!file7) {
+                                notePath = "Assets/Mech_Module/" + asset;
+                                const file8 = app.vault.fileMap[notePath] || app.vault.fileMap[notePath + ".md"];
+                                if (!file8) {
+                                    notePath = "No path";
+                                }
                             }
                         }
                     }
+                }
             }
         }
     }
