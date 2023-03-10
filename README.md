@@ -4,6 +4,12 @@ Welcome to my Starforged Starter Vault!  I set this up to play Starforged in a w
 ## Change Log
 I did a terrible job keeping track earlier, here are the files that you should change to get everything working to v1.5 and beyond.
 
+### v1.5.4
+* Updated <font color="red">README.md</font>
+* Updated <font color="red">starforged_stats.sfile.md</font> and <font color="red">starforged_moves.sfile.md</font>
+* Added Starsmith: Mecha Mercs material in <font color="red">Mech</font> and <font color="red">Mech_Module</font> folders inside the Asset folder.
+* Added all Starsmith: Assets including <font color="red">Crew Member, Flash Fox, Furball, Nano-Swarm, Waterwyrm</font> in the Companion folder, <font color="red">Immortal Coil, Indefatigable, Soulless, Traveler</font> in the Deed folder, <font color="red">Aeroponics, Armory, Drones, External Refit, Holodeck, Stabiliziers, Tractor Beam, Mech Printer</font> in the Module folder, <font color="red">Constable, Cosmic Constructor, Enhanced, Linguist, Logistician, Precog, Psionic, Quantum Tunneler, Rebel, Rocketeer, Scientist, Security Guard, Telepath, Voidshifter, Wealth Management, Well-Connected</font> in the Path folder, and <font color="red">Aquatic HOV</font> in the Support_Vehicle folder.
+
 ### v1.5.3
 * Updated <font color="red">README.md</font>
 * Updated <font color="red">starforged_progress.sfile.md</font>, <font color="red">starforged_stats.sfile.md</font>, and <font color="red">starforged_moves.sfile.md</font> in Support/inline Scripts folder to fix a bug in the RegEx for the move command and a bug where it grabbed the first created character by default rather than the first listed alphabetically.
@@ -340,7 +346,7 @@ This folder contains all the Inline Script shortcut files.  If you are making yo
 The Templates folder is necessary for creating new files with progress tracks.  However, the Oracle, Move, and Asset templates were only used for importing JSON data and can safely be removed.  You can also add any other templates to this file that you would like the Templater plugin to have access to.
 
 ## Credits
-All original Assets, Moves, and Oracles are from [Dataforged](https://github.com/rsek/dataforged), the official Starforged repository. Expanded Oracles and Mecha Merc assets are my original works (available in PDF and print form on [DriveThruRPG](https://www.drivethrurpg.com).)
+All original Assets, Moves, and Oracles are from [Dataforged](https://github.com/rsek/dataforged), the official Starforged repository. Starsmith: Expanded Oracles, Starsmith: Mecha Merc assets, and Starsmith: Assets are my original works (available in PDF and print form on [DriveThruRPG](https://www.drivethrurpg.com).)
 
 Image, Map, and Stethoscope icons from [Lucide](https://lucide.dev/)
 
