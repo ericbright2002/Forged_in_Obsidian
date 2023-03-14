@@ -4,6 +4,10 @@ Welcome to my Starforged Starter Vault!  I set this up to play Starforged in a w
 ## Change Log
 I did a terrible job keeping track earlier, here are the files that you should change to get everything working to v1.5 and beyond.
 
+### v1.5.5
+* Added the <font color="red">StarsmithAssets.JSON</font> file in the main folder which has all the Starsmith: Assets and Starsmith: Mecha Mercs assets in it.
+* Fixed a typo in the README file
+
 ### v1.5.4
 * Updated <font color="red">README.md</font>
 * Updated <font color="red">starforged_stats.sfile.md</font> and <font color="red">starforged_moves.sfile.md</font>
@@ -105,7 +109,7 @@ I didn't do anything to set up a sector map because I never play with a map.  Th
 While you are free to use any and all of the commands the Inline Scripts offers out of the box, below are explainations of the specific scripts I set up in four different files.  Remember that every Inline Scripts command starts with `;;` and ends with `::` by default.  I won't be able to type the full commands as examples below because it would trigger the scripts.
 
 ### Summary of Commands
-1. <u>toggleimpact {condition} {optional: Which character filename?}</u> - Toggle an impact on/off for the given character.
+1. <u>impact {condition} {optional: Which character filename?}</u> - Toggle an impact on/off for the given character.
    
 2. <u>burnmom  {optional: Which character file?}</u> - Burns and resets momentum for the given character.
    
@@ -180,9 +184,9 @@ While you are free to use any and all of the commands the Inline Scripts offers 
 ### Details of Individual Commands
 
 1. **starforged_stats.sfile:** This file contains several helper functions that you don't need to worry about as well as the following Inline Scripts commands.
-	* **toggleimpact {impact name} {optional: Which character filename?}:** This command will turn on or off a condition such as `Wounded` or `Traumatized`.  These are actually unicode open hex or close hex that live in the frontmatter of each character file, and this script flips the unicode symbol back and forth.  NOTE: You must use `Harmed` instead of `Permanently Harmed` since frontmatter variables cannot have spaces in them.
+	* **impact {impact name} {optional: Which character filename?}:** This command will turn on or off a condition such as `Wounded` or `Traumatized`.  These are actually unicode open hex or close hex that live in the frontmatter of each character file, and this script flips the unicode symbol back and forth.  NOTE: You must use `Harmed` instead of `Permanently Harmed` since frontmatter variables cannot have spaces in them.
 	  
-	  <u>Example use:</u> `;;toggleimpact wounded Char1` 
+	  <u>Example use:</u> `;;impact wounded Char1` 
 	  
 	  <hr>
 	* **burnmom {optional: Which character filename?}:** This command burns momentum for the given character and gives you a callout box to write out what this mechanically changed.
