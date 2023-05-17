@@ -305,5 +305,5 @@ itemFormat: \| [0-9]+-(?<range>[0-9]+) \| (?<item>.*) \|
 | 296-296 | Willow Wisp |
 | 297-297 | Wichita Two-Step |
 | 298-298 | Wraith |
-| 299-299 | Yellow Peril |
+| 299-299 | Xenial Traveler |
 | 300-300 | Zephyr |
