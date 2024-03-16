@@ -7414,6 +7414,7 @@
       "Name": "Scale",
       "Category": "Creatures",
       "Filename": "Creatures_Scale",
+      "Dice": "100",
       "Table": [
         {
           "Floor": 1,
@@ -7456,6 +7457,7 @@
       "Name": "Ultra-Scale",
       "Category": "Creatures",
       "Filename": "Creatures_Ultra-Scale",
+      "Dice": "100",
       "Table": [
         {
           "Floor": 1,
